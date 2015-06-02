@@ -1,0 +1,27 @@
+.faucet {
+    margin: 10vw;
+}
+
+.faucet strong {
+    width: 30vw;
+    display: inline-block;
+    font-size: 2vw;
+}
+
+.faucet span {
+    width: 30vw;
+    display: inline-block;
+}
+
+.faucet a {
+    width: 40vw;
+    display: inline-block;
+    padding: 5vw;
+    background-color: orange;
+    border: 1px solid #666;
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+}
