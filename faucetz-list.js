@@ -1,5 +1,4 @@
 Faucetz.extracted = {
-    "offset": 0,
     "connectorGuid": "0091c687-2078-463e-8359-ad8d13d86482",
     "wallet": "1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
     "results": [
@@ -546,14 +545,14 @@ Faucetz.extracted = {
             "paysystem": "FaucetBox",
             "interval": "30 min",
             "reward": "300 satoshi",
-            "link": "http://bitheaven.io/?r=QWEQWE",
+            "link": "http://bitheaven.io/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "bitheaven"
         },
         {
             "paysystem": "FaucetBox",
             "interval": "60 min",
             "reward": "300 satoshi",
-            "link": "http://bitheaven.io/?r=QWEQWE",
+            "link": "http://bitheaven.io/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "playbitcoin"
         },
         {
@@ -581,7 +580,7 @@ Faucetz.extracted = {
             "paysystem": "FaucetBox",
             "interval": "60 min",
             "reward": "300 satoshi",
-            "link": "http://allbitcoin.info/free?r=QWEQWE",
+            "link": "http://allbitcoin.info/free?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "allbitcoin"
         },
         {
@@ -595,7 +594,7 @@ Faucetz.extracted = {
             "paysystem": "FaucetBox",
             "interval": "60 min",
             "reward": "300 satoshi",
-            "link": "http://faucet.dsgnrt.net/?r=QWEQWE",
+            "link": "http://faucet.dsgnrt.net/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "dsgnrt"
         },
         {
@@ -623,7 +622,7 @@ Faucetz.extracted = {
             "paysystem": "FaucetBox",
             "interval": "30 min",
             "reward": "270 satoshi",
-            "link": "http://qoinfaucet.com/?id=QWEQWE",
+            "link": "http://qoinfaucet.com/?id=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "qoinfaucet"
         },
         {
@@ -665,7 +664,7 @@ Faucetz.extracted = {
             "paysystem": "direct",
             "interval": "60 min",
             "reward": "250 satoshi",
-            "link": "http://www.jackpotfaucet.com/index.php?affid=QWEQWE",
+            "link": "http://www.jackpotfaucet.com/index.php?affid=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "jackpotfaucet"
         },
         {
@@ -679,14 +678,14 @@ Faucetz.extracted = {
             "paysystem": "FaucetBox",
             "interval": "120 min",
             "reward": "250 satoshi",
-            "link": "http://free-bitcoin.club/?r=QWEQWE",
+            "link": "http://free-bitcoin.club/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "freebitcoinclub"
         },
         {
             "paysystem": "FaucetBox",
             "interval": "180 min",
             "reward": "250 satoshi",
-            "link": "http://poogiesbitcoin.com/?r=QWEQWE",
+            "link": "http://poogiesbitcoin.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "poogiesbitcoin"
         },
         {
@@ -728,14 +727,14 @@ Faucetz.extracted = {
             "paysystem": "FaucetBox",
             "interval": "600 min",
             "reward": "800 satoshi",
-            "link": "http://welovesatoshi.com/?r=QWEQWE",
+            "link": "http://welovesatoshi.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "welovesatoshi"
         },
         {
             "paysystem": "FaucetBox",
             "interval": "30 min",
             "reward": "700 satoshi",
-            "link": "http://bitcoincolection.com/?r=QWEQWE",
+            "link": "http://bitcoincolection.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "bitcoincolection"
         }
 
@@ -751,103 +750,101 @@ Faucetz.extracted = {
 
 
 
-//         {
-//             "paysystem": "direct",
-//             "interval": "15 min",
-//             "reward": "1000 satoshi",
-//             "link": "http://www.weekendbitcoin.com/?ref=11844",
-//             "name": "weekendbitcoin",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "direct",
-//             "interval": "60 min",
-//             "reward": "1000 satoshi",
-//             "link": "http://tiny.cc/bnptxx",
-//             "name": "zebra",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "FaucetBox",
-//             "interval": "30 min",
-//             "reward": "600 satoshi",
-//             "link": "http://minebit.co.in/?ref=7905",
-//             "name": "minebit NEW",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "FaucetBox",
-//             "interval": "60 min",
-//             "reward": "501 satoshi",
-//             "link": "http://goo.gl/lLtGlw",
-//             "name": "elenabitcoin",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "FaucetBox",
-//             "interval": "60 min",
-//             "reward": "501 satoshi",
-//             "link": "http://goo.gl/SVq5wv",
-//             "name": "artbitcoin",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "direct",
-//             "interval": "30 min",
-//             "reward": "500 satoshi",
-//             "link": "http://takebit.co.in/?ref=2160",
-//             "name": "takebitcoin",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "direct",
-//             "interval": "30 min",
-//             "reward": "500 satoshi",
-//             "link": "http://goo.gl/EN68Zn",
-//             "name": "luckbitcoin",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "FaucetBox",
-//             "interval": "60 min",
-//             "reward": "500 satoshi",
-//             "link": "http://goo.gl/uCHjOh",
-//             "name": "bitfree",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "direct",
-//             "interval": "10 min",
-//             "reward": "362 satoshi",
-//             "link": "http://www.bitcoinaliens.com/faucet/?ref=36186",
-//             "name": "bitcoinaliens",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "FaucetBox",
-//             "interval": "60 min",
-//             "reward": "300 satoshi",
-//             "link": "http://btc-tree.com/id=272",
-//             "name": "btc-tree",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "Microwallet",
-//             "interval": "60 min",
-//             "reward": "225 satoshi",
-//             "link": "http://btc2.rena-faucet.com/index.php?id=40478",
-//             "name": "rena-faucet",
-//             "dirty": "true"
-//         },
-//         {
-//             "paysystem": "direct",
-//             "interval": "60 min",
-//             "reward": "550 satoshi",
-//             "link": "https://goo.gl/yFNhgp",
-//             "name": "farmsatoshi",
-//             "dirty": "true"
-//         }
-    ],
-    "title": "BTCFaucetList - Bitcoin Faucet List. Use our new bitcoin faucet list and earn massive satoshi from premium bitcoin faucets",
-    "pageUrl": "http://www.btcfaucetlist.net/btclist/"
+        // {
+        //     "paysystem": "direct",
+        //     "interval": "15 min",
+        //     "reward": "1000 satoshi",
+        //     "link": "http://www.weekendbitcoin.com/?ref=11844",
+        //     "name": "weekendbitcoin",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "direct",
+        //     "interval": "60 min",
+        //     "reward": "1000 satoshi",
+        //     "link": "http://tiny.cc/bnptxx",
+        //     "name": "zebra",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "FaucetBox",
+        //     "interval": "30 min",
+        //     "reward": "600 satoshi",
+        //     "link": "http://minebit.co.in/?ref=7905",
+        //     "name": "minebit NEW",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "FaucetBox",
+        //     "interval": "60 min",
+        //     "reward": "501 satoshi",
+        //     "link": "http://goo.gl/lLtGlw",
+        //     "name": "elenabitcoin",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "FaucetBox",
+        //     "interval": "60 min",
+        //     "reward": "501 satoshi",
+        //     "link": "http://goo.gl/SVq5wv",
+        //     "name": "artbitcoin",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "direct",
+        //     "interval": "30 min",
+        //     "reward": "500 satoshi",
+        //     "link": "http://takebit.co.in/?ref=2160",
+        //     "name": "takebitcoin",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "direct",
+        //     "interval": "30 min",
+        //     "reward": "500 satoshi",
+        //     "link": "http://goo.gl/EN68Zn",
+        //     "name": "luckbitcoin",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "FaucetBox",
+        //     "interval": "60 min",
+        //     "reward": "500 satoshi",
+        //     "link": "http://goo.gl/uCHjOh",
+        //     "name": "bitfree",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "direct",
+        //     "interval": "10 min",
+        //     "reward": "362 satoshi",
+        //     "link": "http://www.bitcoinaliens.com/faucet/?ref=36186",
+        //     "name": "bitcoinaliens",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "FaucetBox",
+        //     "interval": "60 min",
+        //     "reward": "300 satoshi",
+        //     "link": "http://btc-tree.com/id=272",
+        //     "name": "btc-tree",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "Microwallet",
+        //     "interval": "60 min",
+        //     "reward": "225 satoshi",
+        //     "link": "http://btc2.rena-faucet.com/index.php?id=40478",
+        //     "name": "rena-faucet",
+        //     "dirty": "true"
+        // },
+        // {
+        //     "paysystem": "direct",
+        //     "interval": "60 min",
+        //     "reward": "550 satoshi",
+        //     "link": "https://goo.gl/yFNhgp",
+        //     "name": "farmsatoshi",
+        //     "dirty": "true"
+        // }
+    ]
 };

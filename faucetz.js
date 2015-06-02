@@ -17,7 +17,7 @@ window.onload = function () {
         margin: 0,
         padding: 0,
         backgroundColor: "#aaa"
-    });
+    }).append("AGORA SIM está limpo e atualizado DALIS!");
     
     container.appendTo(body);
     
