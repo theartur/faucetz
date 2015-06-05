@@ -3,19 +3,27 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
     
     var container = Faucetz.container = $('<div />');
     var body = $("body");
-    var list;
+    
+    var list, cached, served;
     
     try {
-        list = JSON.parse(localStorage.Faucetz);
+        cached = JSON.parse(localStorage.Faucetz);
+        served = Faucetz.extracted.results;
+        list = $.extend(served, cached);
+        console.log("Cache updated");
     } catch (e) {
         list = Faucetz.extracted.results;
+        console.log("Served");
     }
     
     var cardsRendered = 0;
     
     function saveEverything() {
         localStorage.Faucetz = JSON.stringify(list);
-        console.log(JSON.stringify(list), document.cookie);
+        
+        console.log("Cache updated");
+        
+        console.log(JSON.stringify(list).length, "kb", document.cookie);
     }
 
     function buildFaucetzCard(item) {
@@ -31,9 +39,10 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
         var name = item.name;
         var interval = item.interval;
         var url = item.link;
-        var index = item.index || cardsRendered++;
+        var index = (cardsRendered++, item.index) || cardsRendered;
         var payments = item.payments || [];
         var comments = item.comments || [];
+        var commentsText = "<li>" + comments.join("</li><li>") + "</li>";
         var totalPayed = payments.length && payments.reduce(function(a,b){return a+b;});
         var payLast1 = payments[0] || 0;
         var payLast2 = payments[1] || 0;
@@ -53,6 +62,7 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
             .replace("{{ payLast4 }}", payLast4)
             .replace("{{ payLast5 }}", payLast5)
             .replace("{{ payments }}", payments.length)
+            .replace("{{ comments }}", commentsText)
             .replace("{{ commentsLength }}", comments.length)
             .replace("{{ interval }}", interval)
             .replace("{{ url }}", url)
@@ -98,7 +108,7 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
 
                 while (commentsAvailable--) {
                     comment = "<li>" + item.comments[commentsAvailable] + "</li>";
-                    updatedValues.find(".comments-section").append(comment);
+//                     updatedValues.find(".comments-section").append(comment);
                 }
 
                 updatedValues
@@ -132,7 +142,7 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
 
     container.appendTo(body);
 
-    console.log((JSON.stringify(list).length/1024)|0, "kb");
+    console.log((JSON.stringify(list).length/1024)|0, "k", list.length);
 
 //     container.css({
 //         border: "1px solid #666",
@@ -141,8 +151,28 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
 //         backgroundColor: "#ddd"
 //     });
 
-    for (var i = 0; i < list.length; i++) {
-        container.append(buildFaucetzCard(list[i]));
+    function loadMore() {
+        var limit = 10;
+        
+        console.log("Loading more ", limit);
+        
+        while (limit--) {
+            container.append(buildFaucetzCard(list[cardsRendered]));
+        }
     }
+    
+    loadMore();
+    
+    $(document).scroll(function() {
+        var height = $(document).height() * 0.8;
+        var scroll = window.scrollY + $(window).height();
+        
+        if (height <= scroll) {
+            loadMore();
+        }
+    });
+//     for (var i = 0; i < list.length; i++) {
+//         container.append(buildFaucetzCard(list[i]));
+//     }
 
 };
