@@ -2,6 +2,8 @@ window.onload = function () {
     $.get("card.html?_=" + Math.random(), Faucetz.onCardTemplateLoad);
 };
 
+    
+Faucetz.cardsRendered = 0;
 Faucetz.buildFaucetzCard = function (item, newCard) {
     // {
     //     "paysystem": "direct",
@@ -17,13 +19,13 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
     item.user.comments = item.user.comments || [];
 
     if (newCard) {
-        cardsRendered++;
+        Faucetz.cardsRendered++;
     }
 
     var name = item.name;
     var interval = item.interval;
     var url = item.link;
-    var index = cardsRendered;
+    var index = Faucetz.cardsRendered;
     var payments = item.user.payments || [];
     var comments = item.user.comments || [];
     var commentsText = "<li>" + comments.join("</li><li>") + "</li>";
@@ -37,19 +39,19 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
     item.index = index;
 
     var itemTemplate = Faucetz.cardTemplate
-    .replace("{{ index }}", index)
-    .replace("{{ name }}", name)
-    .replace("{{ totalPayed }}", totalPayed)
-    .replace("{{ payLast1 }}", payLast1)
-    .replace("{{ payLast2 }}", payLast2)
-    .replace("{{ payLast2 }}", payLast3)
-    .replace("{{ payLast4 }}", payLast4)
-    .replace("{{ payLast5 }}", payLast5)
-    .replace("{{ payments }}", payments.length)
-    .replace("{{ comments }}", commentsText)
-    .replace("{{ commentsLength }}", comments.length)
-    .replace("{{ interval }}", interval)
-    .replace("{{ url }}", url)
+        .replace("{{ index }}", index)
+        .replace("{{ name }}", name)
+        .replace("{{ totalPayed }}", totalPayed)
+        .replace("{{ payLast1 }}", payLast1)
+        .replace("{{ payLast2 }}", payLast2)
+        .replace("{{ payLast2 }}", payLast3)
+        .replace("{{ payLast4 }}", payLast4)
+        .replace("{{ payLast5 }}", payLast5)
+        .replace("{{ payments }}", payments.length)
+        .replace("{{ comments }}", commentsText)
+        .replace("{{ commentsLength }}", comments.length)
+        .replace("{{ interval }}", interval)
+        .replace("{{ url }}", url)
     ;
 
     var faucetzCard = $(itemTemplate);
@@ -128,7 +130,7 @@ Faucetz.filterCleanFaucetz = function (list) {
 	
 	while (limit--) {
 		if (list[listHead].clean) {
-			filteredFaucetz.push(Faucetz.buildFaucetzCard(list[listHead]));
+			filteredFaucetz.push(Faucetz.buildFaucetzCard(list[listHead], true));
 		}
 		
 		listHead++;

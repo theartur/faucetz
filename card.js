@@ -18,30 +18,15 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
     
     list = Faucetz.filterCleanFaucetz(list);
     
-    var cardsRendered = 0;
-    
     function saveEverything() {
         localStorage.Faucetz = JSON.stringify(list);
         
         console.log("Cache updated", JSON.stringify(list).length/1024|0, "k");
     }
 
-    body.css({
-        margin: 0,
-        padding: 0,
-        backgroundColor: "#aaa"
-    });
-
     container.appendTo(body);
 
     console.log((JSON.stringify(list).length/1024)|0, "k", list.length);
-
-//     container.css({
-//         border: "1px solid #666",
-//         width: "95vw",
-//         margin: "10vw auto",
-//         backgroundColor: "#ddd"
-//     });
 
     var listHead = 0;
     function loadMore() {
@@ -51,22 +36,7 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
         console.log("Loading more ", limit);
         
         while (filtered && limit--) {
-            if (list[listHead].clean) {
-                
-                
-                
-                Faucetz.filterCleanFaucetz(list);
-                container.append(Faucetz.buildFaucetzCard(list[listHead], true));
-                
-                
-                
-                
-                filtered = true;
-            } else {
-                filtered = false;
-            }
-            
-            listHead++;
+            container.append(list[listHead++]);
         }
     }
     
