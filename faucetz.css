@@ -6,6 +6,16 @@ html {
     margin: 10vw;
 }
 
+.action {
+    transition: all 10s ease;
+    background-color: #cfb;
+}
+
+.faucetz-card .visit:visited {
+    background-color: #cfb;
+}
+
+/* 
 .faucet strong {
     width: 30vw;
     display: inline-block;
@@ -28,4 +38,4 @@ html {
     font-family: sans-serif;
     border-radius: 5px;
     font-weight: bold;
-}
+} */

@@ -1,4 +1,4 @@
-<div class="content has-header">
+<div class="faucetz-card content has-header">
     <div class="list card">
         <div class="item item-avatar">
             <strong style="position: absolute;top: 16px;left: 16px;max-width: 100px;max-height: 40px;width: 100%;height: 100%;">{{ index }}. </strong>
@@ -13,22 +13,25 @@
                 <span class="subdued">{{ payLast4 }}</span>&nbsp;|&nbsp;
                 <span class="subdued">{{ payLast5 }}</span>
             </p>
+            
+            <ul class="comments-section"></ul>
+            
             <p>
-                <a href="#" class="subdued">{{ payments }} pagamentos</a>
-                <a href="#" class="subdued">{{ comments }} comentários</a>
-                <a href="#" class="subdued">{{ interval }}</a>
+                <a href="javascript:;" class="subdued">{{ payments }} pagamentos</a>
+                <a href="javascript:;" class="subdued">{{ commentsLength }} comentários</a>
+                <a href="javascript:;" class="subdued">{{ interval }}</a>
             </p>
         </div>
         <div class="item tabs tabs-secondary tabs-icon-left">
-            <a class="tab-item" href="#">
+            <a class="payed tab-item" href="javascript:;">
                 <i class="icon ion-thumbsup"></i>
                 Pagou
             </a>
-            <a class="tab-item" href="#">
+            <a class="comment tab-item" href="javascript:;">
                 <i class="icon ion-chatbox"></i>
                 Comentar
             </a>
-            <a class="tab-item visit" href="{{ url }}">
+            <a class="visit tab-item" href="{{ url }}" target="_blank">
                 <i class="icon ion-share"></i>
                 Visitar
             </a>
