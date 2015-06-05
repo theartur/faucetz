@@ -1,4 +1,4 @@
 # faucetz
 Nobody can stop an idea whose time has come
 
-// soon to be cloud stored ;}-
+// soon to be cloud stored and total satoshi ranked ;}-
