@@ -9,7 +9,7 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
     try {
         cached = JSON.parse(localStorage.Faucetz);
         served = Faucetz.extracted.results;
-        list = $.extend(served, cached);
+        list = $.extend(true, cached, served);
         console.log("Cache updated");
     } catch (e) {
         list = Faucetz.extracted.results;
@@ -23,7 +23,7 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
         
         console.log("Cache updated");
         
-        console.log(JSON.stringify(list).length, "kb", document.cookie);
+        console.log(JSON.stringify(list).length/1024, "kb");
     }
 
     function buildFaucetzCard(item) {
@@ -36,12 +36,16 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
         //     "dirty": "true"
         // }
 
+        item.user = item.user || {};
+        item.user.payments = item.user.payments || [];
+        item.user.comments = item.user.comments || [];
+        
         var name = item.name;
         var interval = item.interval;
         var url = item.link;
         var index = (cardsRendered++, item.index) || cardsRendered;
-        var payments = item.payments || [];
-        var comments = item.comments || [];
+        var payments = item.user.payments || [];
+        var comments = item.user.comments || [];
         var commentsText = "<li>" + comments.join("</li><li>") + "</li>";
         var totalPayed = payments.length && payments.reduce(function(a,b){return a+b;});
         var payLast1 = payments[0] || 0;
@@ -71,12 +75,11 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
         var faucetzCard = $(itemTemplate);
 
         faucetzCard.find(".payed").click(function () {
-            item.payments = item.payments || [];
 
             var amount = prompt("how many satoshis?")|0;
             
             if (amount) {
-                item.payments.unshift(amount);
+                item.user.payments.unshift(amount);
                 
                 var updatedValues = buildFaucetzCard(item);
                 
@@ -95,19 +98,17 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
 
         faucetzCard.find(".comment").click(function () {
             
-            item.comments = item.comments || [];
-            
-            var comment = prompt("do you want to remember something?");
+            var comment = prompt("do you want to say something?");
             
             if (comment) {
-                item.comments.push(comment);
+                item.user.comments.push(comment);
             
                 var updatedValues = buildFaucetzCard(item);
 
-                var commentsAvailable = item.comments.length;
+                var commentsAvailable = item.user.comments.length;
 
                 while (commentsAvailable--) {
-                    comment = "<li>" + item.comments[commentsAvailable] + "</li>";
+                    comment = "<li>" + item.user.comments[commentsAvailable] + "</li>";
 //                     updatedValues.find(".comments-section").append(comment);
                 }
 
