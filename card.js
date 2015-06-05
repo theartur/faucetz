@@ -3,7 +3,14 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
     
     var container = Faucetz.container = $('<div />');
     var body = $("body");
-    var list = JSON.parse(localStorage.Faucetz) || Faucetz.extracted.results;
+    var list;
+    
+    try {
+        list = JSON.parse(localStorage.Faucetz);
+    } catch (e) {
+        list = Faucetz.extracted.results;
+    }
+    
     var cardsRendered = 0;
     
     function saveEverything() {
