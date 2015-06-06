@@ -2968,1311 +2968,570 @@ Faucetz.extracted = {
             "highestdailypayout": "305 satoshi"
         },
         {
-            "index": "354",
-            "reward": "93 satoshi",
-            "interval": "10 min",
-            "description": "up to 777 satoshis every 10 miniutes !",
-            "link": "http://bitprofits.info/",
-            "name": "bitprofits.info",
-            "highestdailypayout": "666 satoshi"
-        },
-        {
-            "index": "355",
+            "clean": "true",
             "reward": "93 satoshi",
             "interval": "180 min",
             "description": "Just another faucet in a box",
-            "link": "http://sarahscoins.com/",
+            "link": "http://sarahscoins.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Sarahscoins.com",
             "highestdailypayout": "550 satoshi"
         },
         {
-            "index": "356",
+            "clean": "true",
             "reward": "93 satoshi",
             "interval": "5 min",
             "description": "Bit Faucet Get 100 to 1000 Satoshi Every 5 Min",
-            "link": "http://moneyinpjs.com/bitfaucet/",
+            "link": "http://moneyinpjs.com/bitfaucet/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Bit Faucet",
             "highestdailypayout": "500 satoshi"
         },
         {
-            "index": "357",
+            "clean": "true",
             "reward": "90 satoshi",
             "interval": "15 min",
             "description": "A new bitcoin faucet. Earn up to 400 satoshis every 15 minutes.",
-            "link": "http://bitsy.co.in",
+            "link": "http://bitsy.co.in/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Coinbitsy",
             "highestdailypayout": "250 satoshi"
         },
         {
-            "index": "358",
+            "clean": "true",
             "reward": "90 satoshi",
             "interval": "180 min",
             "description": "Free Bitcoins for all",
-            "link": "http://neofaucet.com",
+            "link": "http://neofaucet.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "neofaucet",
             "highestdailypayout": "300 satoshi"
         },
         {
-            "index": "359",
+            "clean": "true",
             "reward": "88 satoshi",
             "interval": "30 min",
             "description": "Economic game. Building mines on the planets of the solar system. Sell ore and earn Satoshi!",
-            "link": "http://surf.16mb.com/faucetinabox-r46",
+            "link": "http://surf.16mb.com/faucetinabox-r46/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Satoshi Resources",
             "highestdailypayout": "400 satoshi"
         },
         {
-            "index": "360",
-            "reward": "86 satoshi",
-            "interval": "10 min",
-            "description": "Get 100 Satoshi every 10 minutes!",
-            "link": "http://btcrips.com/",
-            "name": "BTC Rips",
-            "highestdailypayout": "450 satoshi"
-        },
-        {
-            "index": "361",
+            "clean": "true",
             "reward": "86 satoshi",
             "interval": "60 min",
             "description": "Free Bitcoin Every Hour",
-            "link": "http://megabitcoin.ru/",
+            "link": "http://megabitcoin.ru/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Mega Bitcoin",
             "highestdailypayout": "300 satoshi"
         },
         {
-            "index": "362",
+            "clean": "true",
             "reward": "82 satoshi",
             "interval": "180 min",
             "description": "Just another Faucet in a Box :)",
-            "link": "http://sarahsways.doublebitcoins.com/",
+            "link": "http://sarahsways.doublebitcoins.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Sarahs ฿itcoin Faucet",
             "highestdailypayout": "350 satoshi"
         },
         {
-            "index": "363",
+            "clean": "true",
             "reward": "81 satoshi",
             "interval": "30 min",
             "description": "Free satoshi every 30 mins! Whit 15% Referral commission!",
-            "link": "http://extrabitfaucet.com/",
+            "link": "http://extrabitfaucet.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Extra Bit Faucet",
             "highestdailypayout": "1100 satoshi"
         },
         {
-            "index": "364",
+            "clean": "true",
             "reward": "81 satoshi",
             "interval": "60 min",
             "description": "Claim your BTC now",
-            "link": "http://chipanime.com",
+            "link": "http://chipanime.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Anime Faucet",
             "highestdailypayout": "400 satoshi"
         },
         {
-            "index": "365",
-            "reward": "80 satoshi",
-            "interval": "60 min",
-            "description": "Feel the gloop of the gloopiest faucet to ever gloop the net",
-            "link": "http://faucet.661.org",
-            "name": "Gloopy Faucet",
-            "highestdailypayout": "150 satoshi"
-        },
-        {
-            "index": "366",
+            "clean": "true",
             "reward": "79 satoshi",
             "interval": "60 min",
             "description": "100, 1000 or 10000 satoshi every hour!",
-            "link": "http://faucet.ogsi.it",
+            "link": "http://faucet.ogsi.it/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "faucet.ogsi.it",
             "highestdailypayout": "500 satoshi"
         },
         {
-            "index": "367",
+            "clean": "true",
             "reward": "79 satoshi",
             "interval": "120 min",
             "description": "Babai Zhot !",
-            "link": "http://bsdmag.ru/faucet/",
+            "link": "http://bsdmag.ru/faucet/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Free Bitcoin Faucet",
             "highestdailypayout": "250 satoshi"
         },
         {
-            "index": "368",
+            "clean": "true",
             "reward": "79 satoshi",
             "interval": "77 min",
             "description": "Get 777 bitcoins every 77mins",
-            "link": "http://77bitcoins.com",
+            "link": "http://77bitcoins.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "77bitcoins",
             "highestdailypayout": "732 satoshi"
         },
         {
-            "index": "369",
+            "clean": "true",
             "reward": "79 satoshi",
             "interval": "15 min",
             "description": "Earn Free Bitcoins for Every 15 min",
-            "link": "http://globalbitcoin.globalonlineworks.com",
+            "link": "http://globalbitcoin.globalonlineworks.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Global Bit Coins",
             "highestdailypayout": "650 satoshi"
         },
         {
-            "index": "370",
+            "clean": "true",
             "reward": "78 satoshi",
             "interval": "60 min",
             "description": "XXX Bitcoin Faucet - bitcoin.xbit.ninja",
-            "link": "http://bitcoin.xbit.ninja",
+            "link": "http://bitcoin.xbit.ninja/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "XXX Bitcoin Faucet",
             "highestdailypayout": "450 satoshi"
         },
         {
-            "index": "371",
+            "clean": "true",
             "reward": "78 satoshi",
             "interval": "360 min",
             "description": "Bitcoin faucet. Win up to 1500 Satoshi!",
-            "link": "http://speedbit.biz",
+            "link": "http://speedbit.biz/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "SpeedBit",
             "highestdailypayout": "375 satoshi"
         },
         {
-            "index": "372",
+            "clean": "true",
             "reward": "77 satoshi",
             "interval": "30 min",
             "description": "Earn Up to 10,000 Satoshi. BTC every 30 Minuts.",
-            "link": "http://blogua.org/freebtc/",
+            "link": "http://blogua.org/freebtc/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Free BTC box",
             "highestdailypayout": "200 satoshi"
         },
         {
-            "index": "373",
+            "clean": "true",
             "reward": "77 satoshi",
             "interval": "60 min",
             "description": "win 2000 satochis every 60 minute!",
-            "link": "http://gozns.com",
+            "link": "http://gozns.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "gozns",
             "highestdailypayout": "275 satoshi"
         },
         {
-            "index": "374",
+            "clean": "true",
             "reward": "76 satoshi",
             "interval": "60 min",
             "description": "free bitcoin cada 60 minutos 300.500.1000",
-            "link": "http://www.webfreebitcoin.cu.cc",
+            "link": "http://www.webfreebitcoin.cu.cc/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "freebitcoin",
             "highestdailypayout": "250 satoshi"
         },
         {
-            "index": "375",
+            "clean": "true",
             "reward": "75 satoshi",
             "interval": "15 min",
             "description": "100-1000 SATOSHI EVERY 15 MINUTES REFER 120%",
-            "link": "http://best.bitcran.ru",
+            "link": "http://best.bitcran.ru/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Best Faucet",
             "highestdailypayout": "150 satoshi"
         },
         {
-            "index": "376",
+            "clean": "true",
             "reward": "75 satoshi",
             "interval": "120 min",
             "description": "Get free satoshi every 2 hours! - FreeBtc4You",
-            "link": "http://freebtc4you.hj.cx/faucetbox/",
+            "link": "http://freebtc4you.hj.cx/faucetbox/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "FreeBtc4You",
             "highestdailypayout": "375 satoshi"
         },
         {
-            "index": "377",
+            "clean": "true",
             "reward": "73 satoshi",
             "interval": "10 min",
-            "link": "http://btc.skycloud.om",
+            "link": "http://btc.skycloud.om/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "SkyCloud.om - Free Bitcoin",
             "highestdailypayout": "250 satoshi"
         },
         {
-            "index": "378",
+            "clean": "true",
             "reward": "72 satoshi",
             "interval": "180 min",
             "description": "Free Satoshis every 180 minutes. Win a percentage as referred sharing the link and do not forget to revisit the faucet to win the great reward.",
-            "link": "http://btcsgratis.com/",
+            "link": "http://btcsgratis.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "BTCSGratis",
             "highestdailypayout": "300 satoshi"
         },
         {
-            "index": "379",
+            "clean": "true",
             "reward": "72 satoshi",
             "interval": "10 min",
             "description": "gratis 100 satoshi setiap 10 menit",
-            "link": "http://zarobitcoin.890m.com",
+            "link": "http://zarobitcoin.890m.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Zaro Bitcoin",
             "highestdailypayout": "400 satoshi"
         },
         {
-            "index": "380",
-            "reward": "70 satoshi",
-            "interval": "10 min",
-            "link": "http://www.talkcoins.net/btc",
-            "name": "TalkCoins.net - Free Bitcoin",
-            "highestdailypayout": "300 satoshi"
-        },
-        {
-            "index": "381",
+            "clean": "true",
             "reward": "70 satoshi",
             "interval": "60 min",
             "description": "Just another Faucet in a Box :)",
-            "link": "http://bitcash.tk",
+            "link": "http://bitcash.tk/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Bitcoin Faucet",
             "highestdailypayout": "550 satoshi"
         },
         {
-            "index": "382",
+            "clean": "true",
             "reward": "67 satoshi",
             "interval": "5 min",
             "description": "Get Paid Every 5 min",
-            "link": "http://faucet.ibitco.in",
+            "link": "http://faucet.ibitco.in/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Welcome To ibitco.in",
             "highestdailypayout": "345 satoshi"
         },
         {
-            "index": "383",
+            "clean": "true",
             "reward": "67 satoshi",
             "interval": "60 min",
             "description": "Win free Bitcoins every hour, no strings attached!",
-            "link": "http://btc-love.ru/",
+            "link": "http://btc-love.ru/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "BTC-LOVE",
             "highestdailypayout": "150 satoshi"
         },
         {
-            "index": "384",
+            "clean": "true",
             "reward": "65 satoshi",
             "interval": "90 min",
             "description": "300% referral bonus!!",
-            "link": "http://refer4bitcoin.com",
+            "link": "http://refer4bitcoin.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Refer4Bitcoin",
             "highestdailypayout": "325 satoshi"
         },
         {
-            "index": "385",
-            "reward": "65 satoshi",
-            "interval": "1400 min",
-            "description": "Claim your satoshi up to 420 with and average of 144 satoshi per visit every 24 hours.",
-            "link": "http://faucet.omnibot2k.com",
-            "name": "Omnibot's Faucet",
-            "highestdailypayout": "248 satoshi"
-        },
-        {
-            "index": "386",
-            "reward": "63 satoshi",
-            "interval": "60 min",
-            "link": "http://greenfaucet.cf/",
-            "name": "GreenFaucet",
-            "highestdailypayout": "200 satoshi"
-        },
-        {
-            "index": "387",
-            "reward": "61 satoshi",
-            "interval": "30 min",
-            "description": "Make money NOWWWWW!!!!",
-            "link": "http://bigfaucet.hj.cx",
-            "name": "Bigfaucet",
-            "highestdailypayout": "200 satoshi"
-        },
-        {
-            "index": "388",
-            "reward": "59 satoshi",
-            "interval": "1 min",
-            "description": "50 satoshi (99%) 500 satoshi (1%)",
-            "link": "http://btcc50btc500.faucetfly.com",
-            "name": "btcc50btc500",
-            "highestdailypayout": "225 satoshi"
-        },
-        {
-            "index": "389",
+            "clean": "true",
             "reward": "58 satoshi",
             "interval": "60 min",
             "description": "PTR24 - FREE BTC",
-            "link": "http://ptr24.com.pl/faucet/",
+            "link": "http://ptr24.com.pl/faucet/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "PTR24 FAUCET",
             "highestdailypayout": "200 satoshi"
         },
         {
-            "index": "390",
-            "reward": "58 satoshi",
-            "interval": "180 min",
-            "link": "http://timosha.finbox.club/faucet",
-            "name": "timosha",
-            "highestdailypayout": "500 satoshi"
-        },
-        {
-            "index": "391",
+            "clean": "true",
             "reward": "57 satoshi",
             "interval": "180 min",
             "description": "50- 2222 Satoshi! Online since September 2014 without running dry. Now on FaucetBOX!",
-            "link": "http://myfreebitcoins.org",
+            "link": "http://myfreebitcoins.org/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "MyFreeBitcoins.org",
             "highestdailypayout": "1111 satoshi"
         },
         {
-            "index": "392",
-            "reward": "57 satoshi",
-            "interval": "30 min",
-            "description": "Earn Free Bitcoins Every 30 min",
-            "link": "http://globalonlineworks.com/",
-            "name": "GLOBAL ONLINE WORKS",
-            "highestdailypayout": "100 satoshi"
-        },
-        {
-            "index": "393",
+            "clean": "true",
             "reward": "56 satoshi",
             "interval": "60 min",
             "description": "Get your bitcoins easy !",
-            "link": "http://www.easybitcoin.pw/",
+            "link": "http://www.easybitcoin.pw/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "EasyBitcoin",
             "highestdailypayout": "175 satoshi"
         },
         {
-            "index": "394",
-            "reward": "56 satoshi",
-            "interval": "15 min",
-            "description": "Earn Free Bit Coins for Every 15 min",
-            "link": "http://bababitcoin.faucetfly.com",
-            "name": "Baba Bit Coin",
-            "highestdailypayout": "100 satoshi"
-        },
-        {
-            "index": "395",
+            "clean": "true",
             "reward": "55 satoshi",
             "interval": "60 min",
             "description": "Get Free 1000 Satoshi every 60 minutes 100% Satoshi GUARANTEED and 20% for REF.",
-            "link": "http://bitcoinfreeworld.2fh.co",
+            "link": "http://bitcoinfreeworld.2fh.co/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "bitcoinfreeworld",
             "highestdailypayout": "500 satoshi"
         },
         {
-            "index": "396",
-            "reward": "54 satoshi",
-            "interval": "60 min",
-            "description": "earn 300 bitcoins every 30 minutes :) ;) <3 and promote it",
-            "link": "http://thunderbits.zz.mu/",
-            "name": "Thunder BitCoin",
-            "highestdailypayout": "100 satoshi"
-        },
-        {
-            "index": "397",
-            "reward": "54 satoshi",
-            "interval": "120 min",
-            "description": "earn 50-100 satoshis each 2 hours",
-            "link": "http://www.free.bit-faucet.com",
-            "name": "free.bit-faucet.com",
-            "highestdailypayout": "100 satoshi"
-        },
-        {
-            "index": "398",
+            "clean": "true",
             "reward": "52 satoshi",
             "interval": "60 min",
             "description": "free",
-            "link": "http://btcgratis.in",
+            "link": "http://btcgratis.in/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "btcgratis",
             "highestdailypayout": "100 satoshi"
         },
         {
-            "index": "399",
+            "clean": "true",
             "reward": "51 satoshi",
             "interval": "60 min",
             "description": "The Coin Tasker Bitcoin Faucet brings non-members the opportunity to earn free bitcoins without registration. The #1 bitcoin earning community has expanded bitcoin earning opportunities to include everyone, everywhere!",
-            "link": "http://cointasker.com/bitcoin-faucet/",
+            "link": "http://cointasker.com/bitcoin-faucet/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Coin Tasker Bitcoin Faucet",
             "highestdailypayout": "325 satoshi"
         },
         {
-            "index": "400",
-            "reward": "51 satoshi",
-            "interval": "720 min",
-            "description": "#120 #80 #65 Satoshi, Dont miss it! Also rewards changes every week!",
-            "link": "http://www.freakfaucet.com/faucet.php",
-            "name": "freakfaucet High Payouts Second Faucet!",
-            "highestdailypayout": "153 satoshi"
-        },
-        {
-            "index": "401",
-            "reward": "50 satoshi",
-            "interval": "15 min",
-            "description": "Earn Free Bitcoins Every 15 min",
-            "link": "http://bitcoinfaucet.faucetfly.com",
-            "name": "Bit Coin Faucet",
-            "highestdailypayout": "50 satoshi"
-        },
-        {
-            "index": "402",
+            "clean": "true",
             "reward": "50 satoshi",
             "interval": "2 min",
             "description": "Get FREE BTC Here 100 and 500 satoshi every 2 minutes Get referral comission 100%",
-            "link": "http://indo45.net/",
+            "link": "http://indo45.net/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "indo45.net",
             "highestdailypayout": "50 satoshi"
         },
         {
-            "index": "403",
-            "reward": "48 satoshi",
-            "interval": "15 min",
-            "description": "Get a reward every 15 Minute upto 150 at FreeBitcoin.PK",
-            "link": "http://freebitcoin.pk",
-            "name": "FreeBitcoin.PK",
-            "highestdailypayout": "265 satoshi"
-        },
-        {
-            "index": "404",
+            "clean": "true",
             "reward": "48 satoshi",
             "interval": "30 min",
             "description": "Get Free BitCoin From Indonesia :D - Up to 300 Satoshi Every 30 Minutes And 15% Referal Bonus !!! Come On Get Free Satoshi Faster Faster",
-            "link": "http://indonesia-faucet.16mb.com/bitcoin/",
+            "link": "http://indonesia-faucet.16mb.com/bitcoin/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Indonesia - Bitcoin - Faucet",
             "highestdailypayout": "100 satoshi"
         },
         {
-            "index": "405",
+            "clean": "true",
             "reward": "47 satoshi",
             "interval": "60 min",
             "description": "Just another Faucet in a Box :) >>> Up to 400 Satoshi <<<",
-            "link": "http://btcfaucet.gq/",
+            "link": "http://btcfaucet.gq/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "btcfaucet",
             "highestdailypayout": "100 satoshi"
         },
         {
-            "index": "406",
-            "reward": "47 satoshi",
-            "interval": "60 min",
-            "description": "We Will Gift You Free Bitcoin 60 Minute with High Rate",
-            "link": "http://bitcoinads.ml/",
-            "name": "Gift Bitcoin",
-            "highestdailypayout": "175 satoshi"
-        },
-        {
-            "index": "407",
+            "clean": "true",
             "reward": "45 satoshi",
             "interval": "40 min",
             "description": "Paradise Bitcoin faucet is a website that gives out micro amounts of bitcoin for free, you just need fill a captcha to prove that you are a human not a Machine! UP TO !!!♥♥ 1000 SAT ♥♥ ♥♥ 2500 SAT ♥♥ !!!",
-            "link": "http://paradisebitcoin.com/",
+            "link": "http://paradisebitcoin.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Paradise Bitcoin",
             "highestdailypayout": "150 satoshi"
         },
         {
-            "index": "408",
+            "clean": "true",
             "reward": "43 satoshi",
             "interval": "60 min",
             "description": "Free free bitcoin income",
-            "link": "http://mybitco.in.net/",
+            "link": "http://mybitco.in.net/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "My Free Bitcoin",
             "highestdailypayout": "100 satoshi"
         },
         {
-            "index": "409",
-            "reward": "42 satoshi",
-            "interval": "120 min",
-            "description": "Possible rewards: 50 (34.4%), 70 (27.5%), 90 (24.1%), 150 (13.7%), 300 (< 0.1%) satoshi",
-            "link": "http://freebitcoinfaucet.esy.es/",
-            "name": "freebitcoinfaucet",
-            "highestdailypayout": "75 satoshi"
-        },
-        {
-            "index": "410",
-            "reward": "40 satoshi",
-            "interval": "180 min",
-            "description": "Get FREE #BTC to your FaucetBox every 3 Hours at CoinPrizes.com Bitcoin Faucet.",
-            "link": "http://www.coinprizes.com",
-            "name": "CoinPrizes.com",
-            "highestdailypayout": "225 satoshi"
-        },
-        {
-            "index": "411",
+            "clean": "true",
             "reward": "40 satoshi",
             "interval": "360 min",
             "description": "Win FREE Bitcoin! At LinuOca.me you can get from _50_ to _100_ satoshi every 6 hours!",
-            "link": "http://monkeylab.me",
+            "link": "http://monkeylab.me/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "MonkeyLab - Faucet",
             "highestdailypayout": "125 satoshi"
         },
         {
-            "index": "412",
+            "clean": "true",
             "reward": "38 satoshi",
             "interval": "60 min",
             "description": "150 satoshi every hour.",
-            "link": "http://btc.rkharz.in/",
+            "link": "http://btc.rkharz.in/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "BTC R Kharz",
             "highestdailypayout": "100 satoshi"
         },
         {
-            "index": "413",
-            "reward": "37 satoshi",
-            "interval": "60 min",
-            "link": "http://geniusgames.com/bitcoin/btcfaucet",
-            "name": "Genius Games BTC Faucet",
-            "highestdailypayout": "113 satoshi"
-        },
-        {
-            "index": "414",
+            "clean": "true",
             "reward": "33 satoshi",
             "interval": "120 min",
             "description": "Up to 4000 satoshis every 2 hours. Lifetime Referal commission!",
-            "link": "http://generalfaucet.net",
+            "link": "http://generalfaucet.net/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "General Faucet",
             "highestdailypayout": "240 satoshi"
         },
         {
-            "index": "415",
-            "reward": "33 satoshi",
-            "interval": "60 min",
-            "link": "http://www.getcoin2.com/btc",
-            "name": "GetCoin2 BTC",
-            "highestdailypayout": "75 satoshi"
-        },
-        {
-            "index": "416",
+            "clean": "true",
             "reward": "33 satoshi",
             "interval": "1 min",
             "description": "SatoshiHits.website -100% Referral Bonus! Get Satoshi Every Minute! Up to 12,000 Satoshi an Hour, 288,000 per Day!",
-            "link": "http://www.SatoshiHits.website",
+            "link": "http://www.SatoshiHits.website/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "SatoshiHits.website",
             "highestdailypayout": "438 satoshi"
         },
         {
-            "index": "417",
+            "clean": "true",
             "reward": "33 satoshi",
             "interval": "30 min",
             "description": "Just another Bitcoin faucet to help you make a little money. May collect every 10 minutes and you can also get a 33% referral rate for promoting the website.",
-            "link": "http://take-my-bitco.in",
+            "link": "http://take-my-bitco.in/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Take My BitCo.in",
             "highestdailypayout": "175 satoshi"
         },
         {
-            "index": "418",
+            "clean": "true",
             "reward": "32 satoshi",
             "interval": "180 min",
             "description": "Bitcoins, Litecoins and Peercoins for free every 3 hours! First FaucetBOX.com faucet ever :)",
-            "link": "http://btc.justfaucet.net",
+            "link": "http://btc.justfaucet.net/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "JustFaucet.net",
             "highestdailypayout": "75 satoshi"
         },
         {
-            "index": "419",
+            "clean": "true",
             "reward": "32 satoshi",
             "interval": "360 min",
             "description": "Win FREE Bitcoin! At LinuOca.me you can get from _50_ to _100_ satoshi every 6 hours!",
-            "link": "http://linuoca.me",
+            "link": "http://linuoca.me/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Linuoca - Faucet",
             "highestdailypayout": "75 satoshi"
         },
         {
-            "index": "420",
+            "clean": "true",
             "reward": "30 satoshi",
             "interval": "60 min",
             "description": "Here are your free coins - BTC Faucet Tutaj są Twoje pieniądze - BTC Faucet",
-            "link": "http://hybryda2005.pl/faucet/btc/",
+            "link": "http://hybryda2005.pl/faucet/btc/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "BTC Faucet Projekt Hybryda 2005",
             "highestdailypayout": "250 satoshi"
         },
         {
-            "index": "421",
+            "clean": "true",
             "reward": "30 satoshi",
             "interval": "60 min",
             "description": "Instant to your faucetbox Bitcoin Faucet!",
-            "link": "http://www.minilia.com",
+            "link": "http://www.minilia.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Minilia",
             "highestdailypayout": "285 satoshi"
         },
         {
-            "index": "422",
+            "clean": "true",
             "reward": "29 satoshi",
             "interval": "1440 min",
             "description": "3000 SAT!! 80% REFERRAL BONUS!!!!",
-            "link": "http://www.bitcoinnow.cu.cc",
+            "link": "http://www.bitcoinnow.cu.cc/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Bitcoin Now",
             "highestdailypayout": "365 satoshi"
         },
         {
-            "index": "423",
-            "reward": "28 satoshi",
-            "interval": "180 min",
-            "description": "Bitcoin Faucet",
-            "link": "http://bitfreefaucet.tk",
-            "name": "BIT FREE FAUCET",
-            "highestdailypayout": "150 satoshi"
-        },
-        {
-            "index": "424",
+            "clean": "true",
             "reward": "26 satoshi",
             "interval": "60 min",
             "description": "★ Grab 50-500 Satoshi every hour! - 20% Referral Bonus! See faucet page for details! - From the makers of ★MyFreeBitcoins.org★",
-            "link": "http://myfreebitcoins.org/btcbox/",
+            "link": "http://myfreebitcoins.org/btcbox/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "★BTC Box★",
             "highestdailypayout": "120 satoshi"
         },
         {
-            "index": "425",
+            "clean": "true",
             "reward": "25 satoshi",
             "interval": "1 min",
             "description": "50 satoshis a minute no muss no fuss",
-            "link": "http://faucets.moneygrind.net/",
+            "link": "http://faucets.moneygrind.net/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "moneygrind.net",
             "highestdailypayout": "25 satoshi"
         },
         {
-            "index": "426",
+            "clean": "true",
             "reward": "23 satoshi",
             "interval": "30 min",
             "description": "Upto 1000 Satoshis Every 30 Minutes Earn 20% Referral Commission Get Your Free Bitcoins In Style Most Straight-Forward Deal to Earn & Make Money Online Make Money From Home Build Your Bitcoin Wealth.",
-            "link": "http://styleswimsuit.com",
+            "link": "http://styleswimsuit.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Style Faucet",
             "highestdailypayout": "350 satoshi"
         },
         {
-            "index": "427",
+            "clean": "true",
             "reward": "20 satoshi",
             "interval": "60 min",
             "description": "Get rich with bitcoin and buy an intire town",
-            "link": "http://mynameisjef.be/",
+            "link": "http://mynameisjef.be/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "AwesomeTown",
             "highestdailypayout": "40 satoshi"
         },
         {
-            "index": "428",
+            "clean": "true",
             "reward": "19 satoshi",
             "interval": "30 min",
             "description": "1% chance to win 3000 Satoshi every half hour! Minimum payout is 30 Satoshi.",
-            "link": "http://www.onlinux.co.uk",
+            "link": "http://www.onlinux.co.uk/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Onlinux",
             "highestdailypayout": "45 satoshi"
         },
         {
-            "index": "429",
+            "clean": "true",
             "reward": "18 satoshi",
             "interval": "15 min",
             "description": "50, 500, 5000, 50000 Satoshi Every 15 Minutes and 100% Referral Commission",
-            "link": "http://faucet.surveymasbro.com/",
+            "link": "http://faucet.surveymasbro.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "GREY FAUCET BTC",
             "highestdailypayout": "250 satoshi"
         },
         {
-            "index": "430",
+            "clean": "true",
             "reward": "15 satoshi",
             "interval": "15 min",
             "description": "฿TheNewFaucet with 15 minutes timer.... and growing reward! It starts with 15 satoshi, and when more advertisers join, the reward will go higher every time!฿",
-            "link": "http://car-faucet.netne.net",
+            "link": "http://car-faucet.netne.net/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "฿TheNewFaucet฿",
             "highestdailypayout": "83 satoshi"
         },
         {
-            "index": "431",
-            "reward": "11 satoshi",
-            "interval": "20 min",
-            "description": "Find the right code and win 0.1BTC.",
-            "link": "http://voultfaucet.cf",
-            "name": "VoultFaucet",
-            "highestdailypayout": "80 satoshi"
-        },
-        {
-            "index": "432",
+            "clean": "true",
             "reward": "11 satoshi",
             "interval": "720 min",
             "description": "Claim satoshis twice daily, 50% ref bonus) Easy to use, no pop-ups, no registration, no redirects! User friendly ;)",
-            "link": "http://bitcoin.faucet.fr",
+            "link": "http://bitcoin.faucet.fr/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "BitcoinFaucetFr",
             "highestdailypayout": "20 satoshi"
         },
         {
-            "index": "433",
-            "reward": "11 satoshi",
-            "interval": "1220 min",
-            "description": "Little Dogs BTC 20 Satoshi Every 12 Hours",
-            "link": "http://littledogsbtc.byethost13.com/index.php",
-            "name": "Little Dogs BTC",
-            "highestdailypayout": "20 satoshi"
-        },
-        {
-            "index": "434",
+            "clean": "true",
             "reward": "10 satoshi",
             "interval": "60 min",
             "description": "BTCbros Faucet. Earn 10-25 satoshis + 15 % referral program! Come back every hour!",
-            "link": "http://btcbros.website",
+            "link": "http://btcbros.website/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "BTCbros",
             "highestdailypayout": "48 satoshi"
         },
         {
-            "index": "435",
+            "clean": "true",
             "reward": "10 satoshi",
             "interval": "5 min",
             "description": "It's Raining Bitcoin up in here! Claim up to 100,000 satoshi every 5 minutes! Don't forget your Umbrella!",
-            "link": "http://btc.altcoinrain.com/",
+            "link": "http://btc.altcoinrain.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Altcoin Rain",
             "highestdailypayout": "55 satoshi"
         },
         {
-            "index": "436",
+            "clean": "true",
             "reward": "8 satoshi",
             "interval": "180 min",
             "description": "Just another humble Faucet, win up to 1000 satoshi every 180 minutes.",
-            "link": "http://bitads.webatu.com/",
+            "link": "http://bitads.webatu.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "BitAds",
             "highestdailypayout": "8 satoshi"
         },
         {
-            "index": "437",
-            "reward": "8 satoshi",
-            "interval": "1 min",
-            "description": "10 Satoshi -> every 1 MIN !!!!!",
-            "link": "http://fizikabook.ru/faucetinabox-r45/faucetinabox-r45/index.php",
-            "name": "FizikaBook",
-            "highestdailypayout": "60 satoshi"
-        },
-        {
-            "index": "438",
-            "reward": "7 satoshi",
-            "interval": "1 min",
-            "description": "Сервис бесплатной поминутной раздачи крипто-валюты.",
-            "link": "http://bitmoney.zz.vc/",
-            "name": "BITMONEY",
-            "highestdailypayout": "60 satoshi"
-        },
-        {
-            "index": "439",
+            "clean": "true",
             "reward": "6 satoshi",
             "interval": "60 min",
             "description": "Win up-to 777 satoshis every hour! No registration, pop-ups, or redirect. Welcome to a user friendly faucet ;)",
-            "link": "http://777.candyfaucet.com",
+            "link": "http://777.candyfaucet.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "777CandyFaucet",
             "highestdailypayout": "46 satoshi"
         },
         {
-            "index": "440",
-            "reward": "3 satoshi",
-            "interval": "5000 min",
-            "description": "GET FREE YOUR BITCOIN",
-            "link": "http://kampungbitcoin.faucetfly.com",
-            "name": "Kampung Bitcoin",
-            "highestdailypayout": "3 satoshi"
-        },
-        {
-            "index": "441",
+            "clean": "true",
             "reward": "3 satoshi",
             "interval": "60 min",
             "description": "Hourly satoshis, 100% referral commission. Quick and easy, no signups, popups or redirects!",
-            "link": "http://candyfaucet.com",
+            "link": "http://candyfaucet.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "CandyFaucet",
             "highestdailypayout": "8 satoshi"
         },
         {
-            "index": "442",
+            "clean": "true",
             "reward": "3 satoshi",
             "interval": "15 min",
             "description": "Win FREE Bitcoin up to 1500 satoshi every 15 Minutes!",
-            "link": "http://faucet.clixbitco.in/",
+            "link": "http://faucet.clixbitco.in/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "ClixBitcoin Faucet",
             "highestdailypayout": "15 satoshi"
         },
         {
-            "index": "443",
-            "reward": "1 satoshi",
-            "interval": "300 min",
-            "description": "Come here win 1 satoshi FREE",
-            "link": "http://btcoinsfree.com",
-            "name": "BitCoins Free",
-            "highestdailypayout": "3 satoshi"
-        },
-        {
-            "index": "444",
+            "clean": "true",
             "reward": "1 satoshi",
             "interval": "720 min",
             "description": "Claim free bitcoins every 12 hours!",
-            "link": "http://bitcoinchest.ml",
+            "link": "http://bitcoinchest.ml/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "Bitcoin Chest",
             "highestdailypayout": "1 satoshi"
-        },
-        {
-            "broken": "true",
-            "clean": "true",
-            "paysystem": "FaucetBox",
-            "reward": "1570 satoshi",
-            "interval": "5 min",
-            "description": "1000-5000 satoshi every 5 minutes! Guaranteed quick profit!",
-            "link": "http://freebtc4.me/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
-            "name": "freebtc4.me",
-            "highestdailypayout": "9000 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "446",
-            "reward": "1173 satoshi",
-            "interval": "60 min",
-            "description": "The most popular faucet // + 30% for referrals // Faucet List // MULTIFAUCET // Nice Rewards // AND MUCH MORE -- ENJOY --",
-            "link": "http://getmyfaucet.com/btc/",
-            "name": "Get My Faucet - BTC",
-            "highestdailypayout": "25170 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "447",
-            "reward": "869 satoshi",
-            "interval": "10 min",
-            "description": "You can try your luck to win *** 200,500 AND 1000 SATOSHIES(equal chance of each).*** ***AVERAGE INCOME PER HOUR 4.500 SATOSHI ***",
-            "link": "http://free-coin.zz.mu/bitcoin",
-            "name": "Free coin - Bitcoin faucet",
-            "highestdailypayout": "50900 satoshi"
-        },
-        {
-            "broken": "true",
-            "clean": "true",
-            "paysystem": "FaucetBox",
-            "reward": "866 satoshi",
-            "interval": "60 min",
-            "description": "Main page can be access from here, complete with Blog and another link. http://www.bitframe.co.in/faucet.php",
-            "link": "http://www.bitframe.co.in/faucet/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
-            "name": "Bitframe.co.in",
-            "highestdailypayout": "9700 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "449",
-            "reward": "862 satoshi",
-            "interval": "20 min",
-            "description": "500 (59%), 800 (27.9%), 1000 (9.3%), 2500 (3.1%), 5000 (0.6%) satoshi every 5 minutes. Refferal : 20%",
-            "link": "http://btcnami.com/faucet",
-            "name": "BtcNami",
-            "highestdailypayout": "13850 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "450",
-            "reward": "757 satoshi",
-            "interval": "120 min",
-            "description": "Earn up to 24,000 Satoshi Every Day! (2,000 Every 2 Hours). Massive 50% Referral Commissions",
-            "link": "http://gitbit.co.in",
-            "name": "GitBit",
-            "highestdailypayout": "6600 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "451",
-            "reward": "625 satoshi",
-            "interval": "30 min",
-            "description": "get 800 (93.9%), 8000 (6%), 80000 (0.1%) satoshis every 30 min",
-            "link": "http://www.hispafaucet.com",
-            "name": "hispafaucet",
-            "highestdailypayout": "7400 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "452",
-            "reward": "596 satoshi",
-            "interval": "60 min",
-            "description": "All About Crypto - Bitcoin Faucet up to 25,000 Satoshi!",
-            "link": "http://www.helpmywallet.com/",
-            "name": "HelpMyWallet.com",
-            "highestdailypayout": "4250 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "453",
-            "reward": "537 satoshi",
-            "interval": "60 min",
-            "description": "Биткоин кран 500 Satoshi",
-            "link": "http://bitkobym.ru",
-            "name": "Bitkobym Тот самый кран",
-            "highestdailypayout": "2500 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "454",
-            "reward": "520 satoshi",
-            "interval": "7 min",
-            "description": "Sweet conditions for Bitcoin-funs)",
-            "link": "http://sweetbit.co",
-            "name": "Sweet Bit )",
-            "highestdailypayout": "1721 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "455",
-            "reward": "481 satoshi",
-            "interval": "15 min",
-            "description": "Get 300 to 1000 satoshis every 15 minutes. Lifetime referral commission.",
-            "link": "http://www.freebitcoin.byethost18.com/",
-            "name": "Fast Free Bitcoins",
-            "highestdailypayout": "9000 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "456",
-            "reward": "464 satoshi",
-            "interval": "20 min",
-            "description": "Get 200 - 700 Satoshis every 10 minutes. Average is currently ~700 Satoshis every 10 minutes Get a free play every 10 minutes!",
-            "link": "http://www.boicoteate.com",
-            "name": "Boicoteate",
-            "highestdailypayout": "4800 satoshi"
-        },
-        {
-            "broken": "true",
-            "clean": "true",
-            "paysystem": "FaucetBox",
-            "reward": "444 satoshi",
-            "interval": "60 min",
-            "description": "Custom Themed Faucet Paying Out Every 60 Mins.",
-            "link": "http://www.cheesecoins.co.uk/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
-            "name": "Cheese Coins",
-            "highestdailypayout": "2400 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "458",
-            "reward": "437 satoshi",
-            "interval": "15 min",
-            "description": "You can up to 20000 satoshi every hour or up to 5000 satoshi every 15 mins! New faucet!",
-            "link": "http://makefreebits.ru/",
-            "name": "MakeFreeBits!",
-            "highestdailypayout": "12025 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "459",
-            "reward": "409 satoshi",
-            "interval": "30 min",
-            "description": "New one of many more to come Get 300 satoshi per 30 min",
-            "link": "http://btccanabank.com/",
-            "name": "BTC CANA BANK",
-            "highestdailypayout": "3500 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "460",
-            "reward": "380 satoshi",
-            "interval": "10 min",
-            "description": "100 Free Satoshi Every 10 Minutes, 100Satoshi*90%, 1000Satoshi*10%",
-            "link": "http://www.100freebit.com",
-            "name": "100freebit",
-            "highestdailypayout": "9350 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "461",
-            "reward": "376 satoshi",
-            "interval": "360 min",
-            "description": "Get 100, 200 ... up to 15 000 satoshi. Claim every 6 hours.",
-            "link": "http://faucetbox.bitcoinr.cz/",
-            "name": "BitcoinrCZ",
-            "highestdailypayout": "1250 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "462",
-            "reward": "371 satoshi",
-            "interval": "60 min",
-            "description": "Tut Bitcoin- Получай биткоин каждые 60 минут!",
-            "link": "http://tutbitcoin.ru/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
-            "name": "Tut Bitcoin",
-            "highestdailypayout": "2590 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "463",
-            "reward": "369 satoshi",
-            "interval": "30 min",
-            "description": "150, 200, 300 or 500 satoshi every 30 minutes!",
-            "link": "http://www.getbtc.ru/",
-            "name": "GetBTC.ru",
-            "highestdailypayout": "8200 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "464",
-            "reward": "318 satoshi",
-            "interval": "1440 min",
-            "description": "btc.m-bitco.in",
-            "link": "http://btc.m-bitco.in",
-            "name": "btc.m-bitco.in",
-            "highestdailypayout": "512 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "465",
-            "reward": "308 satoshi",
-            "interval": "60 min",
-            "description": "Free 250 (75%) 500 (25%) 750 (10%) 1000 (1%) satoshis every 60min!",
-            "link": "http://www.grandrefback.com/index.php?task=faucet",
-            "name": "Grand Faucet",
-            "highestdailypayout": "1925 satoshi"
-        },
-        {
-            "broken": "true",
-            "clean": "true",
-            "paysystem": "FaucetBox",
-            "reward": "304 satoshi",
-            "interval": "20 min",
-            "description": "Fast paying well funded Faucet.",
-            "link": "http://www.thefaucet.info/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
-            "name": "The Faucet",
-            "highestdailypayout": "1950 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "467",
-            "reward": "285 satoshi",
-            "interval": "60 min",
-            "description": "free for you",
-            "link": "http://merdekajayateknik.com/ads",
-            "name": "ads",
-            "highestdailypayout": "1500 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "468",
-            "reward": "284 satoshi",
-            "interval": "54 min",
-            "description": "free 250 satoshi 54 menit",
-            "link": "http://deasfanara.esy.es/bitclix",
-            "name": "bitclix",
-            "highestdailypayout": "1200 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "469",
-            "reward": "272 satoshi",
-            "interval": "300 min",
-            "description": "Get 300-1000 Satoshi every 5 hour for FREE",
-            "link": "http://flushfaucet.in.ua",
-            "name": "FlushFaucet",
-            "highestdailypayout": "1050 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "470",
-            "reward": "271 satoshi",
-            "interval": "30 min",
-            "description": "200 satoshi per30minutes by free bitcoin",
-            "link": "http://adhieshop.esy.es/free%20bitcoin/",
-            "name": "free bitcoin",
-            "highestdailypayout": "1225 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "471",
-            "reward": "270 satoshi",
-            "interval": "30 min",
-            "description": "Earn 350 upto 2000 shatosis every 30 minutes.",
-            "link": "http://allfreebtc.site11.com/",
-            "name": "All free BTC",
-            "highestdailypayout": "2900 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "472",
-            "reward": "267 satoshi",
-            "interval": "60 min",
-            "description": "With CryptoDrips you have an equal chance of getting drips of 99 -125 - 150 - 199 - 299 - 299 - 299 - 345 - 499 - 599 - 699 - every 60 minutes. Refer your friends and get 45% of their faucet drips",
-            "link": "http://www.cryptodrips.com",
-            "name": "CryptoDrips",
-            "highestdailypayout": "1774 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "473",
-            "reward": "173 satoshi",
-            "interval": "240 min",
-            "description": "Bitcoin faucet at bitlist.website",
-            "link": "http://faucet.bitlist.website/",
-            "name": "Bitlist.Website",
-            "highestdailypayout": "700 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "474",
-            "reward": "160 satoshi",
-            "interval": "1440 min",
-            "description": "1000 satoshi every 24 hour",
-            "link": "http://faucet.m-bitco.in",
-            "name": "Faucet.m-bitco.in",
-            "highestdailypayout": "377 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "475",
-            "reward": "158 satoshi",
-            "interval": "30 min",
-            "description": "Free 350 (50%) 500 (15%) 750 (10%) 1000 (5%) plus 2500 (5%) and plus plus 5000 (%5) satoshis every 30 min. Big Rewards 100 000",
-            "link": "http://www.teknikdosya.com/",
-            "name": "Technic BTC",
-            "highestdailypayout": "2050 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "476",
-            "reward": "158 satoshi",
-            "interval": "10 min",
-            "description": "▁ ▃ ▅ █ █ ▆ ▂ Top BTC Faucet ▁ ▃ ▅ █ █ ▆ ▂",
-            "link": "http://btc.starcoin.eu",
-            "name": "Btc.StarCoin.eu",
-            "highestdailypayout": "1650 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "477",
-            "reward": "150 satoshi",
-            "interval": "60 min",
-            "description": "Earn satoshi 250 every hour",
-            "link": "http://www.earn-bitcoin.tk/",
-            "name": "Free Bitcoin",
-            "highestdailypayout": "150 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "478",
-            "reward": "128 satoshi",
-            "interval": "60 min",
-            "description": "for those who want to earn",
-            "link": "http://satrip.finbox.club/faucet/",
-            "name": "satrip.finbox.club/faucet/",
-            "highestdailypayout": "500 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "479",
-            "reward": "127 satoshi",
-            "interval": "120 min",
-            "description": "free satoshi 200-500",
-            "link": "http://zzmusatoshi.zz.mu",
-            "name": "zzmusatoshi",
-            "highestdailypayout": "500 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "480",
-            "reward": "122 satoshi",
-            "interval": "60 min",
-            "description": "1% шанс выиграть Джекпот 20000 Сатоши",
-            "link": "http://200btc.ru/",
-            "name": "200Btc.ru",
-            "highestdailypayout": "400 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "481",
-            "reward": "88 satoshi",
-            "interval": "30 min",
-            "description": "*********** Top Bitcoin Faucet ***********",
-            "link": "http://www.bitcoin.starcoin.eu",
-            "name": "Bitcoin.StarCoin.eu",
-            "highestdailypayout": "400 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "482",
-            "reward": "75 satoshi",
-            "interval": "180 min",
-            "description": "Simple bitcoin faucet paying up to 1000 satoshis.",
-            "link": "http://plumfaucet.ml",
-            "name": "Plum Faucet",
-            "highestdailypayout": "250 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "483",
-            "reward": "67 satoshi",
-            "interval": "60 min",
-            "description": "★★★★★ 777 BTC satoshis every hour! ★★★★★",
-            "link": "http://777btc.cf",
-            "name": "777BTC.cf",
-            "highestdailypayout": "616 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "484",
-            "reward": "60 satoshi",
-            "interval": "55 min",
-            "description": "earn BTC free per 50 menit and 20% komisi refferal",
-            "link": "http://earnbtcfree.esy.es",
-            "name": "earnbtcfree.esy.es",
-            "highestdailypayout": "200 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "485",
-            "reward": "58 satoshi",
-            "interval": "60 min",
-            "description": "Please Come To Mu2n And Get 600 Satoshi Every 60 min",
-            "link": "http://mu2n.faucetfly.com/",
-            "name": "Mu2n",
-            "highestdailypayout": "99 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "486",
-            "reward": "56 satoshi",
-            "interval": "15 min",
-            "description": "EARN 100 SATOSHIS EVERY 30 min",
-            "link": "http://bitcoinshiva.faucetfly.com",
-            "name": "BIT COIN SHIVA",
-            "highestdailypayout": "100 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "487",
-            "reward": "54 satoshi",
-            "interval": "60 min",
-            "description": "300 faucet 60 min",
-            "link": "http://pehusatoshi.pe.hu",
-            "name": "pehusatoshi",
-            "highestdailypayout": "150 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "488",
-            "reward": "51 satoshi",
-            "interval": "0 min",
-            "description": "▁ ▃ ▅ █ █ ▆ ▂ ▁ No limit time faucet win up to 10 000 satoshi + extra 101% referral bonus ▁ ▃ ▅ █ █ ▆ ▂ ▁",
-            "link": "http://btc.cekuj.net/",
-            "name": "Btc.Cekuj",
-            "highestdailypayout": "640 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "489",
-            "reward": "50 satoshi",
-            "interval": "15 min",
-            "description": "Earn Free Bit Coins for Every 15 min",
-            "link": "http://globalbitcoin.faucetfly.com",
-            "name": "Global Bit Coin",
-            "highestdailypayout": "50 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "490",
-            "reward": "33 satoshi",
-            "interval": "30 min",
-            "description": "** New faucet ** Payout every 30 mins",
-            "link": "http://crypto.faucetfly.com",
-            "name": "Crypto FaucetFly",
-            "highestdailypayout": "33 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "491",
-            "reward": "31 satoshi",
-            "interval": "10 min",
-            "description": "Just another faucet!",
-            "link": "http://omneity.me/faucet/faucet.php",
-            "name": "omneity.me",
-            "highestdailypayout": "50 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "492",
-            "reward": "29 satoshi",
-            "interval": "180 min",
-            "description": "Faucet Bitcoin",
-            "link": "http://cryptocoinsfaucets.tk",
-            "name": "Cryptocoin Faucet",
-            "highestdailypayout": "188 satoshi"
-        },
-        {
-            "broken": "true",
-            "index": "493",
-            "reward": "5 satoshi",
-            "interval": "60 min",
-            "description": "Get Coin",
-            "link": "http://www.coingets.com",
-            "name": "Free BTC",
-            "highestdailypayout": "13 satoshi"
         },
         {
             "clean": "true",
@@ -4719,6 +3978,248 @@ Faucetz.extracted = {
 
 
 
+        // STIL DIRTY
+
+        // {
+        //     "index": "380",
+        //     "reward": "70 satoshi",
+        //     "interval": "10 min",
+        //     "link": "http://www.talkcoins.net/btc",
+        //     "name": "TalkCoins.net - Free Bitcoin",
+        //     "highestdailypayout": "300 satoshi"
+        // },
+        // {
+        //     "index": "385",
+        //     "reward": "65 satoshi",
+        //     "interval": "1400 min",
+        //     "description": "Claim your satoshi up to 420 with and average of 144 satoshi per visit every 24 hours.",
+        //     "link": "http://faucet.omnibot2k.com",
+        //     "name": "Omnibot's Faucet",
+        //     "highestdailypayout": "248 satoshi"
+        // },
+        // {
+        //     "index": "386",
+        //     "reward": "63 satoshi",
+        //     "interval": "60 min",
+        //     "link": "http://greenfaucet.cf/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
+        //     "name": "GreenFaucet",
+        //     "highestdailypayout": "200 satoshi"
+        // },
+        // {
+        //     "index": "387",
+        //     "reward": "61 satoshi",
+        //     "interval": "30 min",
+        //     "description": "Make money NOWWWWW!!!!",
+        //     "link": "http://bigfaucet.hj.cx",
+        //     "name": "Bigfaucet",
+        //     "highestdailypayout": "200 satoshi"
+        // },
+        // {
+        //     "index": "388",
+        //     "reward": "59 satoshi",
+        //     "interval": "1 min",
+        //     "description": "50 satoshi (99%) 500 satoshi (1%)",
+        //     "link": "http://btcc50btc500.faucetfly.com",
+        //     "name": "btcc50btc500",
+        //     "highestdailypayout": "225 satoshi"
+        // },
+        // {
+        //     "index": "390",
+        //     "reward": "58 satoshi",
+        //     "interval": "180 min",
+        //     "link": "http://timosha.finbox.club/faucet",
+        //     "name": "timosha",
+        //     "highestdailypayout": "500 satoshi"
+        // },
+        // {
+        //     "index": "392",
+        //     "reward": "57 satoshi",
+        //     "interval": "30 min",
+        //     "description": "Earn Free Bitcoins Every 30 min",
+        //     "link": "http://globalonlineworks.com/",
+        //     "name": "GLOBAL ONLINE WORKS",
+        //     "highestdailypayout": "100 satoshi"
+        // },
+        // {
+        //     "index": "394",
+        //     "reward": "56 satoshi",
+        //     "interval": "15 min",
+        //     "description": "Earn Free Bit Coins for Every 15 min",
+        //     "link": "http://bababitcoin.faucetfly.com",
+        //     "name": "Baba Bit Coin",
+        //     "highestdailypayout": "100 satoshi"
+        // },
+        // {
+        //     "index": "396",
+        //     "reward": "54 satoshi",
+        //     "interval": "60 min",
+        //     "description": "earn 300 bitcoins every 30 minutes :) ;) <3 and promote it",
+        //     "link": "http://thunderbits.zz.mu/",
+        //     "name": "Thunder BitCoin",
+        //     "highestdailypayout": "100 satoshi"
+        // },
+        // {
+        //     "index": "397",
+        //     "reward": "54 satoshi",
+        //     "interval": "120 min",
+        //     "description": "earn 50-100 satoshis each 2 hours",
+        //     "link": "http://www.free.bit-faucet.com",
+        //     "name": "free.bit-faucet.com",
+        //     "highestdailypayout": "100 satoshi"
+        // },
+        // {
+        //     "index": "400",
+        //     "reward": "51 satoshi",
+        //     "interval": "720 min",
+        //     "description": "#120 #80 #65 Satoshi, Dont miss it! Also rewards changes every week!",
+        //     "link": "http://www.freakfaucet.com/faucet.php",
+        //     "name": "freakfaucet High Payouts Second Faucet!",
+        //     "highestdailypayout": "153 satoshi"
+        // },
+        // {
+        //     "index": "401",
+        //     "reward": "50 satoshi",
+        //     "interval": "15 min",
+        //     "description": "Earn Free Bitcoins Every 15 min",
+        //     "link": "http://bitcoinfaucet.faucetfly.com",
+        //     "name": "Bit Coin Faucet",
+        //     "highestdailypayout": "50 satoshi"
+        // },
+        // {
+        //     "index": "403",
+        //     "reward": "48 satoshi",
+        //     "interval": "15 min",
+        //     "description": "Get a reward every 15 Minute upto 150 at FreeBitcoin.PK",
+        //     "link": "http://freebitcoin.pk",
+        //     "name": "FreeBitcoin.PK",
+        //     "highestdailypayout": "265 satoshi"
+        // },
+        // {
+        //     "index": "406",
+        //     "reward": "47 satoshi",
+        //     "interval": "60 min",
+        //     "description": "We Will Gift You Free Bitcoin 60 Minute with High Rate",
+        //     "link": "http://bitcoinads.ml/",
+        //     "name": "Gift Bitcoin",
+        //     "highestdailypayout": "175 satoshi"
+        // },
+        // {
+        //     "index": "409",
+        //     "reward": "42 satoshi",
+        //     "interval": "120 min",
+        //     "description": "Possible rewards: 50 (34.4%), 70 (27.5%), 90 (24.1%), 150 (13.7%), 300 (< 0.1%) satoshi",
+        //     "link": "http://freebitcoinfaucet.esy.es/",
+        //     "name": "freebitcoinfaucet",
+        //     "highestdailypayout": "75 satoshi"
+        // },
+        // {
+        //     "index": "410",
+        //     "reward": "40 satoshi",
+        //     "interval": "180 min",
+        //     "description": "Get FREE #BTC to your FaucetBox every 3 Hours at CoinPrizes.com Bitcoin Faucet.",
+        //     "link": "http://www.coinprizes.com",
+        //     "name": "CoinPrizes.com",
+        //     "highestdailypayout": "225 satoshi"
+        // },
+        // {
+        //     "index": "413",
+        //     "reward": "37 satoshi",
+        //     "interval": "60 min",
+        //     "link": "http://geniusgames.com/bitcoin/btcfaucet",
+        //     "name": "Genius Games BTC Faucet",
+        //     "highestdailypayout": "113 satoshi"
+        // },
+        // {
+        //     "index": "415",
+        //     "reward": "33 satoshi",
+        //     "interval": "60 min",
+        //     "link": "http://www.getcoin2.com/btc",
+        //     "name": "GetCoin2 BTC",
+        //     "highestdailypayout": "75 satoshi"
+        // },
+        // {
+        //     "index": "423",
+        //     "reward": "28 satoshi",
+        //     "interval": "180 min",
+        //     "description": "Bitcoin Faucet",
+        //     "link": "http://bitfreefaucet.tk",
+        //     "name": "BIT FREE FAUCET",
+        //     "highestdailypayout": "150 satoshi"
+        // },
+        // {
+        //     "index": "431",
+        //     "reward": "11 satoshi",
+        //     "interval": "20 min",
+        //     "description": "Find the right code and win 0.1BTC.",
+        //     "link": "http://voultfaucet.cf",
+        //     "name": "VoultFaucet",
+        //     "highestdailypayout": "80 satoshi"
+        // },
+        // {
+        //     "index": "433",
+        //     "reward": "11 satoshi",
+        //     "interval": "1220 min",
+        //     "description": "Little Dogs BTC 20 Satoshi Every 12 Hours",
+        //     "link": "http://littledogsbtc.byethost13.com/index.php",
+        //     "name": "Little Dogs BTC",
+        //     "highestdailypayout": "20 satoshi"
+        // },
+        // {
+        //     "index": "437",
+        //     "reward": "8 satoshi",
+        //     "interval": "1 min",
+        //     "description": "10 Satoshi -> every 1 MIN !!!!!",
+        //     "link": "http://fizikabook.ru/faucetinabox-r45/faucetinabox-r45/index.php",
+        //     "name": "FizikaBook",
+        //     "highestdailypayout": "60 satoshi"
+        // },
+        // {
+        //     "index": "438",
+        //     "reward": "7 satoshi",
+        //     "interval": "1 min",
+        //     "description": "Сервис бесплатной поминутной раздачи крипто-валюты.",
+        //     "link": "http://bitmoney.zz.vc/",
+        //     "name": "BITMONEY",
+        //     "highestdailypayout": "60 satoshi"
+        // },
+        // {
+        //     "index": "440",
+        //     "reward": "3 satoshi",
+        //     "interval": "5000 min",
+        //     "description": "GET FREE YOUR BITCOIN",
+        //     "link": "http://kampungbitcoin.faucetfly.com",
+        //     "name": "Kampung Bitcoin",
+        //     "highestdailypayout": "3 satoshi"
+        // },
+        // {
+        //     "index": "443",
+        //     "reward": "1 satoshi",
+        //     "interval": "300 min",
+        //     "description": "Come here win 1 satoshi FREE",
+        //     "link": "http://btcoinsfree.com",
+        //     "name": "BitCoins Free",
+        //     "highestdailypayout": "3 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "446",
+        //     "reward": "1173 satoshi",
+        //     "interval": "60 min",
+        //     "description": "The most popular faucet // + 30% for referrals // Faucet List // MULTIFAUCET // Nice Rewards // AND MUCH MORE -- ENJOY --",
+        //     "link": "http://getmyfaucet.com/btc/",
+        //     "name": "Get My Faucet - BTC",
+        //     "highestdailypayout": "25170 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "447",
+        //     "reward": "869 satoshi",
+        //     "interval": "10 min",
+        //     "description": "You can try your luck to win *** 200,500 AND 1000 SATOSHIES(equal chance of each).*** ***AVERAGE INCOME PER HOUR 4.500 SATOSHI ***",
+        //     "link": "http://free-coin.zz.mu/bitcoin",
+        //     "name": "Free coin - Bitcoin faucet",
+        //     "highestdailypayout": "50900 satoshi"
+        // },
 
 
 
@@ -4726,9 +4227,509 @@ Faucetz.extracted = {
 
 
 
-
-
-
+        // BROKEN
+        // {
+        //     "broken": "true",
+        //     "clean": "true",
+        //     "paysystem": "FaucetBox",
+        //     "reward": "1570 satoshi",
+        //     "interval": "5 min",
+        //     "description": "1000-5000 satoshi every 5 minutes! Guaranteed quick profit!",
+        //     "link": "http://freebtc4.me/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
+        //     "name": "freebtc4.me",
+        //     "highestdailypayout": "9000 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "clean": "true",
+        //     "paysystem": "FaucetBox",
+        //     "reward": "866 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Main page can be access from here, complete with Blog and another link. http://www.bitframe.co.in/faucet.php",
+        //     "link": "http://www.bitframe.co.in/faucet/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
+        //     "name": "Bitframe.co.in",
+        //     "highestdailypayout": "9700 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "449",
+        //     "reward": "862 satoshi",
+        //     "interval": "20 min",
+        //     "description": "500 (59%), 800 (27.9%), 1000 (9.3%), 2500 (3.1%), 5000 (0.6%) satoshi every 5 minutes. Refferal : 20%",
+        //     "link": "http://btcnami.com/faucet",
+        //     "name": "BtcNami",
+        //     "highestdailypayout": "13850 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "450",
+        //     "reward": "757 satoshi",
+        //     "interval": "120 min",
+        //     "description": "Earn up to 24,000 Satoshi Every Day! (2,000 Every 2 Hours). Massive 50% Referral Commissions",
+        //     "link": "http://gitbit.co.in",
+        //     "name": "GitBit",
+        //     "highestdailypayout": "6600 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "451",
+        //     "reward": "625 satoshi",
+        //     "interval": "30 min",
+        //     "description": "get 800 (93.9%), 8000 (6%), 80000 (0.1%) satoshis every 30 min",
+        //     "link": "http://www.hispafaucet.com",
+        //     "name": "hispafaucet",
+        //     "highestdailypayout": "7400 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "452",
+        //     "reward": "596 satoshi",
+        //     "interval": "60 min",
+        //     "description": "All About Crypto - Bitcoin Faucet up to 25,000 Satoshi!",
+        //     "link": "http://www.helpmywallet.com/",
+        //     "name": "HelpMyWallet.com",
+        //     "highestdailypayout": "4250 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "453",
+        //     "reward": "537 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Биткоин кран 500 Satoshi",
+        //     "link": "http://bitkobym.ru",
+        //     "name": "Bitkobym Тот самый кран",
+        //     "highestdailypayout": "2500 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "454",
+        //     "reward": "520 satoshi",
+        //     "interval": "7 min",
+        //     "description": "Sweet conditions for Bitcoin-funs)",
+        //     "link": "http://sweetbit.co",
+        //     "name": "Sweet Bit )",
+        //     "highestdailypayout": "1721 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "455",
+        //     "reward": "481 satoshi",
+        //     "interval": "15 min",
+        //     "description": "Get 300 to 1000 satoshis every 15 minutes. Lifetime referral commission.",
+        //     "link": "http://www.freebitcoin.byethost18.com/",
+        //     "name": "Fast Free Bitcoins",
+        //     "highestdailypayout": "9000 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "456",
+        //     "reward": "464 satoshi",
+        //     "interval": "20 min",
+        //     "description": "Get 200 - 700 Satoshis every 10 minutes. Average is currently ~700 Satoshis every 10 minutes Get a free play every 10 minutes!",
+        //     "link": "http://www.boicoteate.com",
+        //     "name": "Boicoteate",
+        //     "highestdailypayout": "4800 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "clean": "true",
+        //     "paysystem": "FaucetBox",
+        //     "reward": "444 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Custom Themed Faucet Paying Out Every 60 Mins.",
+        //     "link": "http://www.cheesecoins.co.uk/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
+        //     "name": "Cheese Coins",
+        //     "highestdailypayout": "2400 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "458",
+        //     "reward": "437 satoshi",
+        //     "interval": "15 min",
+        //     "description": "You can up to 20000 satoshi every hour or up to 5000 satoshi every 15 mins! New faucet!",
+        //     "link": "http://makefreebits.ru/",
+        //     "name": "MakeFreeBits!",
+        //     "highestdailypayout": "12025 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "459",
+        //     "reward": "409 satoshi",
+        //     "interval": "30 min",
+        //     "description": "New one of many more to come Get 300 satoshi per 30 min",
+        //     "link": "http://btccanabank.com/",
+        //     "name": "BTC CANA BANK",
+        //     "highestdailypayout": "3500 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "460",
+        //     "reward": "380 satoshi",
+        //     "interval": "10 min",
+        //     "description": "100 Free Satoshi Every 10 Minutes, 100Satoshi*90%, 1000Satoshi*10%",
+        //     "link": "http://www.100freebit.com",
+        //     "name": "100freebit",
+        //     "highestdailypayout": "9350 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "461",
+        //     "reward": "376 satoshi",
+        //     "interval": "360 min",
+        //     "description": "Get 100, 200 ... up to 15 000 satoshi. Claim every 6 hours.",
+        //     "link": "http://faucetbox.bitcoinr.cz/",
+        //     "name": "BitcoinrCZ",
+        //     "highestdailypayout": "1250 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "462",
+        //     "reward": "371 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Tut Bitcoin- Получай биткоин каждые 60 минут!",
+        //     "link": "http://tutbitcoin.ru/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
+        //     "name": "Tut Bitcoin",
+        //     "highestdailypayout": "2590 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "463",
+        //     "reward": "369 satoshi",
+        //     "interval": "30 min",
+        //     "description": "150, 200, 300 or 500 satoshi every 30 minutes!",
+        //     "link": "http://www.getbtc.ru/",
+        //     "name": "GetBTC.ru",
+        //     "highestdailypayout": "8200 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "464",
+        //     "reward": "318 satoshi",
+        //     "interval": "1440 min",
+        //     "description": "btc.m-bitco.in",
+        //     "link": "http://btc.m-bitco.in",
+        //     "name": "btc.m-bitco.in",
+        //     "highestdailypayout": "512 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "465",
+        //     "reward": "308 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Free 250 (75%) 500 (25%) 750 (10%) 1000 (1%) satoshis every 60min!",
+        //     "link": "http://www.grandrefback.com/index.php?task=faucet",
+        //     "name": "Grand Faucet",
+        //     "highestdailypayout": "1925 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "clean": "true",
+        //     "paysystem": "FaucetBox",
+        //     "reward": "304 satoshi",
+        //     "interval": "20 min",
+        //     "description": "Fast paying well funded Faucet.",
+        //     "link": "http://www.thefaucet.info/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
+        //     "name": "The Faucet",
+        //     "highestdailypayout": "1950 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "467",
+        //     "reward": "285 satoshi",
+        //     "interval": "60 min",
+        //     "description": "free for you",
+        //     "link": "http://merdekajayateknik.com/ads",
+        //     "name": "ads",
+        //     "highestdailypayout": "1500 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "468",
+        //     "reward": "284 satoshi",
+        //     "interval": "54 min",
+        //     "description": "free 250 satoshi 54 menit",
+        //     "link": "http://deasfanara.esy.es/bitclix",
+        //     "name": "bitclix",
+        //     "highestdailypayout": "1200 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "469",
+        //     "reward": "272 satoshi",
+        //     "interval": "300 min",
+        //     "description": "Get 300-1000 Satoshi every 5 hour for FREE",
+        //     "link": "http://flushfaucet.in.ua",
+        //     "name": "FlushFaucet",
+        //     "highestdailypayout": "1050 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "470",
+        //     "reward": "271 satoshi",
+        //     "interval": "30 min",
+        //     "description": "200 satoshi per30minutes by free bitcoin",
+        //     "link": "http://adhieshop.esy.es/free%20bitcoin/",
+        //     "name": "free bitcoin",
+        //     "highestdailypayout": "1225 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "471",
+        //     "reward": "270 satoshi",
+        //     "interval": "30 min",
+        //     "description": "Earn 350 upto 2000 shatosis every 30 minutes.",
+        //     "link": "http://allfreebtc.site11.com/",
+        //     "name": "All free BTC",
+        //     "highestdailypayout": "2900 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "472",
+        //     "reward": "267 satoshi",
+        //     "interval": "60 min",
+        //     "description": "With CryptoDrips you have an equal chance of getting drips of 99 -125 - 150 - 199 - 299 - 299 - 299 - 345 - 499 - 599 - 699 - every 60 minutes. Refer your friends and get 45% of their faucet drips",
+        //     "link": "http://www.cryptodrips.com",
+        //     "name": "CryptoDrips",
+        //     "highestdailypayout": "1774 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "473",
+        //     "reward": "173 satoshi",
+        //     "interval": "240 min",
+        //     "description": "Bitcoin faucet at bitlist.website",
+        //     "link": "http://faucet.bitlist.website/",
+        //     "name": "Bitlist.Website",
+        //     "highestdailypayout": "700 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "474",
+        //     "reward": "160 satoshi",
+        //     "interval": "1440 min",
+        //     "description": "1000 satoshi every 24 hour",
+        //     "link": "http://faucet.m-bitco.in",
+        //     "name": "Faucet.m-bitco.in",
+        //     "highestdailypayout": "377 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "475",
+        //     "reward": "158 satoshi",
+        //     "interval": "30 min",
+        //     "description": "Free 350 (50%) 500 (15%) 750 (10%) 1000 (5%) plus 2500 (5%) and plus plus 5000 (%5) satoshis every 30 min. Big Rewards 100 000",
+        //     "link": "http://www.teknikdosya.com/",
+        //     "name": "Technic BTC",
+        //     "highestdailypayout": "2050 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "476",
+        //     "reward": "158 satoshi",
+        //     "interval": "10 min",
+        //     "description": "▁ ▃ ▅ █ █ ▆ ▂ Top BTC Faucet ▁ ▃ ▅ █ █ ▆ ▂",
+        //     "link": "http://btc.starcoin.eu",
+        //     "name": "Btc.StarCoin.eu",
+        //     "highestdailypayout": "1650 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "477",
+        //     "reward": "150 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Earn satoshi 250 every hour",
+        //     "link": "http://www.earn-bitcoin.tk/",
+        //     "name": "Free Bitcoin",
+        //     "highestdailypayout": "150 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "478",
+        //     "reward": "128 satoshi",
+        //     "interval": "60 min",
+        //     "description": "for those who want to earn",
+        //     "link": "http://satrip.finbox.club/faucet/",
+        //     "name": "satrip.finbox.club/faucet/",
+        //     "highestdailypayout": "500 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "479",
+        //     "reward": "127 satoshi",
+        //     "interval": "120 min",
+        //     "description": "free satoshi 200-500",
+        //     "link": "http://zzmusatoshi.zz.mu",
+        //     "name": "zzmusatoshi",
+        //     "highestdailypayout": "500 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "480",
+        //     "reward": "122 satoshi",
+        //     "interval": "60 min",
+        //     "description": "1% шанс выиграть Джекпот 20000 Сатоши",
+        //     "link": "http://200btc.ru/",
+        //     "name": "200Btc.ru",
+        //     "highestdailypayout": "400 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "481",
+        //     "reward": "88 satoshi",
+        //     "interval": "30 min",
+        //     "description": "*********** Top Bitcoin Faucet ***********",
+        //     "link": "http://www.bitcoin.starcoin.eu",
+        //     "name": "Bitcoin.StarCoin.eu",
+        //     "highestdailypayout": "400 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "482",
+        //     "reward": "75 satoshi",
+        //     "interval": "180 min",
+        //     "description": "Simple bitcoin faucet paying up to 1000 satoshis.",
+        //     "link": "http://plumfaucet.ml",
+        //     "name": "Plum Faucet",
+        //     "highestdailypayout": "250 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "483",
+        //     "reward": "67 satoshi",
+        //     "interval": "60 min",
+        //     "description": "★★★★★ 777 BTC satoshis every hour! ★★★★★",
+        //     "link": "http://777btc.cf",
+        //     "name": "777BTC.cf",
+        //     "highestdailypayout": "616 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "484",
+        //     "reward": "60 satoshi",
+        //     "interval": "55 min",
+        //     "description": "earn BTC free per 50 menit and 20% komisi refferal",
+        //     "link": "http://earnbtcfree.esy.es",
+        //     "name": "earnbtcfree.esy.es",
+        //     "highestdailypayout": "200 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "485",
+        //     "reward": "58 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Please Come To Mu2n And Get 600 Satoshi Every 60 min",
+        //     "link": "http://mu2n.faucetfly.com/",
+        //     "name": "Mu2n",
+        //     "highestdailypayout": "99 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "486",
+        //     "reward": "56 satoshi",
+        //     "interval": "15 min",
+        //     "description": "EARN 100 SATOSHIS EVERY 30 min",
+        //     "link": "http://bitcoinshiva.faucetfly.com",
+        //     "name": "BIT COIN SHIVA",
+        //     "highestdailypayout": "100 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "487",
+        //     "reward": "54 satoshi",
+        //     "interval": "60 min",
+        //     "description": "300 faucet 60 min",
+        //     "link": "http://pehusatoshi.pe.hu",
+        //     "name": "pehusatoshi",
+        //     "highestdailypayout": "150 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "488",
+        //     "reward": "51 satoshi",
+        //     "interval": "0 min",
+        //     "description": "▁ ▃ ▅ █ █ ▆ ▂ ▁ No limit time faucet win up to 10 000 satoshi + extra 101% referral bonus ▁ ▃ ▅ █ █ ▆ ▂ ▁",
+        //     "link": "http://btc.cekuj.net/",
+        //     "name": "Btc.Cekuj",
+        //     "highestdailypayout": "640 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "489",
+        //     "reward": "50 satoshi",
+        //     "interval": "15 min",
+        //     "description": "Earn Free Bit Coins for Every 15 min",
+        //     "link": "http://globalbitcoin.faucetfly.com",
+        //     "name": "Global Bit Coin",
+        //     "highestdailypayout": "50 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "490",
+        //     "reward": "33 satoshi",
+        //     "interval": "30 min",
+        //     "description": "** New faucet ** Payout every 30 mins",
+        //     "link": "http://crypto.faucetfly.com",
+        //     "name": "Crypto FaucetFly",
+        //     "highestdailypayout": "33 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "491",
+        //     "reward": "31 satoshi",
+        //     "interval": "10 min",
+        //     "description": "Just another faucet!",
+        //     "link": "http://omneity.me/faucet/faucet.php",
+        //     "name": "omneity.me",
+        //     "highestdailypayout": "50 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "492",
+        //     "reward": "29 satoshi",
+        //     "interval": "180 min",
+        //     "description": "Faucet Bitcoin",
+        //     "link": "http://cryptocoinsfaucets.tk",
+        //     "name": "Cryptocoin Faucet",
+        //     "highestdailypayout": "188 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "index": "493",
+        //     "reward": "5 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Get Coin",
+        //     "link": "http://www.coingets.com",
+        //     "name": "Free BTC",
+        //     "highestdailypayout": "13 satoshi"
+        // },
+        // {
+        //     "dirty": "true",
+        //     "reward": "80 satoshi",
+        //     "interval": "60 min",
+        //     "description": "Feel the gloop of the gloopiest faucet to ever gloop the net",
+        //     "link": "http://faucet.661.org",
+        //     "name": "Gloopy Faucet",
+        //     "highestdailypayout": "150 satoshi"
+        // },
+        // {
+        //     "broken": "true",
+        //     "clean": "true",
+        //     "reward": "86 satoshi",
+        //     "interval": "10 min",
+        //     "description": "Get 100 Satoshi every 10 minutes!",
+        //     "link": "http://btcrips.com/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
+        //     "name": "BTC Rips",
+        //     "highestdailypayout": "450 satoshi"
+        // },
+        // {
+        //     "dirty": "true",
+        //     "reward": "93 satoshi",
+        //     "interval": "10 min",
+        //     "description": "up to 777 satoshis every 10 miniutes !",
+        //     "link": "http://bitprofits.info/",
+        //     "name": "bitprofits.info",
+        //     "highestdailypayout": "666 satoshi"
+        // },
         // {
         //     "broken": "true",
         //     "dirty": "true",
