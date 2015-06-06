@@ -22,6 +22,20 @@ body {
     background-color: #cfb;
 }
 
+.faucetz-card .card .item-avatar strong {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    max-width: 100px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.faucetz-card.clean .card .item-avatar strong {
+    color: green;
+}
+
 /* 
 .faucet strong {
     width: 30vw;

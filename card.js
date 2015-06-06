@@ -16,17 +16,11 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
         console.log("Served");
     }
     
-    list = Faucetz.filterCleanFaucetz(list);
+    list = Faucetz.list = Faucetz.filterCleanFaucetz(list);
     
-    function saveEverything() {
-        localStorage.Faucetz = JSON.stringify(list);
-        
-        console.log("Cache updated", JSON.stringify(list).length/1024|0, "k");
-    }
-
     container.appendTo(body);
 
-    console.log((JSON.stringify(list).length/1024)|0, "k", list.length);
+    console.log((JSON.stringify(list).length/1024), "k, clean:", list.length);
 
     var listHead = 0;
     function loadMore() {
@@ -36,16 +30,16 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
         console.log("Loading more ", limit);
         
         while (filtered && limit--) {
-            container.append(list[listHead++]);
+            container.append(Faucetz.buildFaucetzCard(list[listHead++], true));
         }
     }
     
     loadMore();
     
     $(document).scroll(function() {
-        var height = $(document).height() * 0.8;
+        var height = $(document).height() - ($(window).height() * 3);
         var scroll = window.scrollY + $(window).height();
-        console.log(height <= scroll, height, scroll);
+        // console.log(height <= scroll, height, scroll);
         if (height <= scroll) {
             loadMore();
         }

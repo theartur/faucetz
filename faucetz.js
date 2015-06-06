@@ -18,14 +18,19 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
     item.user.payments = item.user.payments || [];
     item.user.comments = item.user.comments || [];
 
+    var index;
     if (newCard) {
         Faucetz.cardsRendered++;
+        index = Faucetz.cardsRendered;
+    } else {
+        index = item.index;
     }
 
+    var clean = item.clean ? "clean" : "";
+    var currentStatus = item.clean ? '<i class="icon ion-cash"></i>' : "";
     var name = item.name;
     var interval = item.interval;
     var url = item.link;
-    var index = Faucetz.cardsRendered;
     var payments = item.user.payments || [];
     var comments = item.user.comments || [];
     var commentsText = "<li>" + comments.join("</li><li>") + "</li>";
@@ -40,6 +45,8 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 
     var itemTemplate = Faucetz.cardTemplate
         .replace("{{ index }}", index)
+        .replace("{{ clean }}", clean)
+        .replace("{{ currentStatus }}", currentStatus)
         .replace("{{ name }}", name)
         .replace("{{ totalPayed }}", totalPayed)
         .replace("{{ payLast1 }}", payLast1)
@@ -75,7 +82,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
             faucetzCard.remove();
         }
 
-        saveEverything();
+        Faucetz.saveEverything();
     });
 
     faucetzCard.find(".comment").click(function () {
@@ -103,7 +110,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
             faucetzCard.remove();
         }
 
-        saveEverything();
+        Faucetz.saveEverything();
     });
 
     faucetzCard.find(".visit").click(function () {
@@ -111,7 +118,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
             .removeClass("action")
             .addClass("action");
 
-        saveEverything();
+        Faucetz.saveEverything();
     });
 
     return faucetzCard;
@@ -129,12 +136,20 @@ Faucetz.filterCleanFaucetz = function (list) {
 	var listHead = 0;
 	
 	while (limit--) {
-		if (list[listHead].clean) {
-			filteredFaucetz.push(Faucetz.buildFaucetzCard(list[listHead], true));
-		}
+// 		if (list[listHead].clean) {
+			filteredFaucetz.push(list[listHead]);
+// 		}
 		
 		listHead++;
 	}
 
 	return filteredFaucetz;
+};
+
+
+Faucetz.saveEverything = function () {
+    var list = Faucetz.list;
+    localStorage.Faucetz = JSON.stringify(list);
+
+    console.log("Cache updated", JSON.stringify(list).length/1024|0, "k");
 };
