@@ -1,4 +1,12 @@
 window.onload = function () {
+    if ( ! localStorage.FaucetzClean) {
+        localStorage.Faucetz = [];
+        localStorage.FaucetzClean = true;
+        console.log("Local lists were cleaned");
+    } else {
+        console.log("Served lists are clean");
+    }
+    
     $.get("card.html?_=" + Math.random(), Faucetz.onCardTemplateLoad);
 };
 

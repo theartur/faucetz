@@ -26,11 +26,16 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
     function loadMore() {
         var limit = 20;
         var filtered = true;
+        var currentFaucet;
         
         console.log("Loading more ", limit);
         
         while (filtered && limit--) {
-            container.append(Faucetz.buildFaucetzCard(list[listHead++], true));
+            currentFaucet = list[listHead++];
+            if (currentFaucet && currentFaucet.clean) {
+                container.append(Faucetz.buildFaucetzCard(currentFaucet, true));
+            }
+            
         }
     }
     
