@@ -163,11 +163,17 @@ Faucetz.random = function (min, max) {
     };
 
 Faucetz.getRandomGoldImg = function () {
+    
     Faucetz.getRandomGoldImg_buffer = Faucetz.getRandomGoldImg_buffer || Faucetz.GoldImgs.slice(0);
+    
+    if (Faucetz.getRandomGoldImg_buffer.length < 1) {
+        Faucetz.getRandomGoldImg_buffer = Faucetz.GoldImgs.slice(0);
+    }
     
     var rnd = Faucetz.random(0, Faucetz.getRandomGoldImg_buffer.length);
 
-    return Faucetz.getRandomGoldImg_buffer.splice(rnd, 1);
+//     return Faucetz.getRandomGoldImg_buffer.splice(rnd, 1); // return random form list
+    return Faucetz.getRandomGoldImg_buffer.shift(); // return ordered
 };
 
 
