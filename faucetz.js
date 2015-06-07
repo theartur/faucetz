@@ -48,6 +48,8 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
     var payLast3 = payments[2] || 0;
     var payLast4 = payments[3] || 0;
     var payLast5 = payments[4] || 0;
+    var avatar = item.avatar || Faucetz.getRandomGoldImg();
+    var mainImage = item.avatar || Faucetz.getRandomGoldImg();
 
     item.index = index;
 
@@ -67,6 +69,8 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
         .replace("{{ commentsLength }}", comments.length)
         .replace("{{ interval }}", interval)
         .replace("{{ url }}", url)
+        .replace("{{ avatar }}", avatar)
+        .replace("{{ mainImage }}", mainImage)
     ;
 
     var faucetzCard = $(itemTemplate);
@@ -152,6 +156,18 @@ Faucetz.filterCleanFaucetz = function (list) {
 	}
 
 	return filteredFaucetz;
+};
+
+Faucetz.random = function (min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    };
+
+Faucetz.getRandomGoldImg = function () {
+    Faucetz.getRandomGoldImg_buffer = Faucetz.getRandomGoldImg_buffer || Faucetz.GoldImgs.slice(0);
+    
+    var rnd = Faucetz.random(0, Faucetz.getRandomGoldImg_buffer.length);
+
+    return Faucetz.getRandomGoldImg_buffer.splice(rnd, 1);
 };
 
 

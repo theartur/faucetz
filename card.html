@@ -1,11 +1,12 @@
 <div class="faucetz-card {{ clean }} content has-header">
     <div class="list card">
         <div class="item item-avatar">
-            <strong>{{ currentStatus }} {{ index }}. </strong>
-            <h2>{{ name }}</h2>
+            <img src="{{ avatar }}">
+            <h2><strong>{{ currentStatus }} {{ index }}. {{ name }}</strong></h2>
             <p>{{ totalPayed }} satoshis pagos</p>
         </div>
         <div class="item item-body">
+            <img class="full-image" src="{{ mainImage }}">
             <p>
                 <span class="subdued">{{ payLast1 }}</span>&nbsp;|&nbsp;
                 <span class="subdued">{{ payLast2 }}</span>&nbsp;|&nbsp;
