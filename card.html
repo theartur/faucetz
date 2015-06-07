@@ -1,40 +1,40 @@
-<div class="faucetz-card {{ clean }} content has-header">
+<div class="faucetz-card {{ clean }} content">
     <div class="list card">
         <div class="item item-avatar">
             <img src="{{ avatar }}">
             <h2><strong>{{ currentStatus }} {{ index }}. {{ name }}</strong></h2>
-            <p>{{ totalPayed }} satoshis pagos</p>
+            <p>{{ totalPayed }} satoshis paid</p>
         </div>
         <div class="item item-body">
             <div class="main-image" style="background-image:url('{{ mainImage }}');"></div>
-            <p>
-                <span class="subdued">{{ payLast1 }}</span>&nbsp;|&nbsp;
-                <span class="subdued">{{ payLast2 }}</span>&nbsp;|&nbsp;
-                <span class="subdued">{{ payLast2 }}</span>&nbsp;|&nbsp;
-                <span class="subdued">{{ payLast4 }}</span>&nbsp;|&nbsp;
-                <span class="subdued">{{ payLast5 }}</span>
-            </p>
+            <ol class="last-payments">
+                <li>{{ payLast1 }}</li>
+                <li>{{ payLast2 }}</li>
+                <li>{{ payLast2 }}</li>
+                <li>{{ payLast4 }}</li>
+                <li>{{ payLast5 }}</li>
+            </ol>
             
             <ul class="comments-section">{{ comments }}</ul>
             
             <p>
-                <a href="javascript:;" class="subdued">{{ payments }} pagamentos</a>
-                <a href="javascript:;" class="subdued">{{ commentsLength }} comentários</a>
-                <a href="javascript:;" class="subdued">{{ interval }}</a>
+                <a class="subdued">{{ payments }} payments</a>
+                <a class="subdued">{{ commentsLength }} comments</a>
+                <a class="subdued">{{ interval }}</a>
             </p>
         </div>
         <div class="item tabs tabs-secondary tabs-icon-left">
             <a class="payed tab-item" href="javascript:;">
                 <i class="icon ion-social-bitcoin"></i>
-                Pagou
+                Paid
             </a>
             <a class="comment tab-item" href="javascript:;">
                 <i class="icon ion-chatbox"></i>
-                Comentar
+                Comment
             </a>
             <a class="visit tab-item" href="{{ url }}" target="_blank">
                 <i class="icon ion-share"></i>
-                Visitar
+                Get this coins
             </a>
         </div>
     </div>

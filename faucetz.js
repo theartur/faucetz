@@ -43,16 +43,18 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
     var comments = item.user.comments || [];
     var commentsText = "<li>" + comments.join("</li><li>") + "</li>";
     var totalPayed = payments.length && payments.reduce(function(a,b){return a+b;});
-    var payLast1 = payments[0] || 0;
-    var payLast2 = payments[1] || 0;
-    var payLast3 = payments[2] || 0;
-    var payLast4 = payments[3] || 0;
-    var payLast5 = payments[4] || 0;
+    var payLast1 = payments[0] || "-";
+    var payLast2 = payments[1] || "-";
+    var payLast3 = payments[2] || "-";
+    var payLast4 = payments[3] || "-";
+    var payLast5 = payments[4] || "-";
     var avatar = item.avatar || Faucetz.getRandomGoldImg();
-    var mainImage = item.avatar || Faucetz.getRandomGoldImg();
+    var mainImage = item.mainImage || Faucetz.getRandomGoldImg();
 
     item.index = index;
-
+    item.avatar = avatar;
+    item.mainImage = mainImage;
+    
     var itemTemplate = Faucetz.cardTemplate
         .replace("{{ index }}", index)
         .replace("{{ clean }}", clean)

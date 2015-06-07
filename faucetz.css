@@ -62,6 +62,20 @@ body {
     text-align: center;
 }
 
+.main-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.instructions {
+    max-width: 500px;
+    margin: 60px auto;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #999;
+}
+
 .faucet {
     margin: 10vw;
 }
@@ -85,6 +99,21 @@ body {
     height: 100px;
     background-size:cover;
     float:right;
+}
+
+.faucetz-card .card .last-payments {
+    margin-left: 30px;
+    list-style-type: decimal;
+}
+
+.faucetz-card .card .tab-item {
+    transition: all 200ms ease;
+}
+
+.faucetz-card .card .tab-item:hover {
+    background-color: #0f0;
+    transform: scale(1.2);
+    color: #000;
 }
 
 /* 

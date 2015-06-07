@@ -1,7 +1,7 @@
 Faucetz.onCardTemplateLoad = function (cardTemplate) {
     Faucetz.cardTemplate = cardTemplate;
     
-    var container = Faucetz.container = $('<div />');
+    var container = Faucetz.container = $('<div class="main-container" />');
     var body = $("body");
     
     var list, cached, served;
