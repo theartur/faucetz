@@ -17,6 +17,25 @@ body {
     border: 50px solid #fff;
 }
 
+.logo-text {
+    font-family: Lobster;
+    font-size: 50px;
+    position: absolute;
+    top: 207px;
+    left: 50%;
+    color: orange;
+    text-shadow: 2px 2px 2px #999;
+    line-height: 33px;
+}
+
+.logo-text-dallas {
+    color: orange;
+}
+
+.logo-text-camel {
+    color: #bf7c00;
+}
+
 .donate {
     margin: 40px 40px 0;
     text-align: center;
