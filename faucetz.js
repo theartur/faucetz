@@ -174,8 +174,15 @@ Faucetz.getRandomGoldImg = function () {
     
     var rnd = Faucetz.random(0, Faucetz.getRandomGoldImg_buffer.length);
 
-//     return Faucetz.getRandomGoldImg_buffer.splice(rnd, 1); // return random form list
-    return Faucetz.getRandomGoldImg_buffer.shift(); // return ordered
+    var imgUrl = Faucetz.getRandomGoldImg_buffer.shift();
+
+    if (location.host == "www.comodominaromundoagora.com.br") {
+        imgUrl = "pijamoney/" + imgUrl;
+    }
+
+//     imgUrl = Faucetz.getRandomGoldImg_buffer.splice(rnd, 1); // return random from list
+
+    return imgUrl; // return ordered
 };
 
 Faucetz.rankByReward = function (list) {
