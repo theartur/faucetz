@@ -176,9 +176,9 @@ Faucetz.getRandomGoldImg = function () {
 
     var imgUrl = Faucetz.getRandomGoldImg_buffer.shift();
 
-    if (location.host == "www.comodominaromundoagora.com.br") {
-        imgUrl = "pijamoney" + imgUrl;
-    }
+    // if (location.host == "www.comodominaromundoagora.com.br") {
+    //     imgUrl = "pijamoney" + imgUrl;
+    // }
 
 //     imgUrl = Faucetz.getRandomGoldImg_buffer.splice(rnd, 1); // return random from list
 
