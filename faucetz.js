@@ -178,6 +178,11 @@ Faucetz.getRandomGoldImg = function () {
     return Faucetz.getRandomGoldImg_buffer.shift(); // return ordered
 };
 
+Faucetz.rankByReward = function (list) {
+    return list.sort(function (a, b) {
+        return parseInt(b.reward, 10) - parseInt(a.reward, 10);
+    });
+};
 
 Faucetz.saveEverything = function () {
     var list = Faucetz.list;

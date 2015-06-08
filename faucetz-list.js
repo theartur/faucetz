@@ -117,7 +117,7 @@ Faucetz.extracted = {
             "reward": "1364 satoshi",
             "interval": "60 min",
             "description": "600 satoshi every 60 minutes, plus 340+ other faucets.. Claim over 100k New** Earn 2000* Satoshi for reporting faucets!",
-            "link": "http://www.claimbit.co.uk/faucet/clean.php?r=true",
+            "link": "http://www.claimbit.co.uk/?r=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "ClaimBit",
             "highestdailypayout": "14950 satoshi"
         },

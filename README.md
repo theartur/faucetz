@@ -3,6 +3,8 @@ Nobody can stop an idea whose time has come
 
 // soon to be cloud stored and total satoshi ranked ;}-
 
+ * PIJAMONEY * 
+
 TO DO:
 
 - cloud store info

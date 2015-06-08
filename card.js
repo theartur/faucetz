@@ -17,6 +17,7 @@ Faucetz.onCardTemplateLoad = function (cardTemplate) {
     }
     
     list = Faucetz.list = Faucetz.filterCleanFaucetz(list);
+    list = Faucetz.list = Faucetz.rankByReward(list);
     
     container.appendTo(body);
 

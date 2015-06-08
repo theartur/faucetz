@@ -10,11 +10,17 @@ body {
 }
 
 .logo {
-    margin: 40px auto;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0 0 100px #fff;
-    border: 50px solid #fff;
+      font-family: Lobster;
+      font-size: 50px;
+      position: absolute;
+      top: 132px;
+      color: #222;
+      text-shadow: 2px 2px 5px #fff;
+      line-height: 33px;
+      width: 100%;
+      background-color: rgba(255,255,255,.3);
+      text-align: center;
+      padding: 30px 0 35px;
 }
 
 .logo-text {
@@ -23,17 +29,9 @@ body {
     position: absolute;
     top: 207px;
     left: 50%;
-    color: orange;
+    color: green;
     text-shadow: 2px 2px 2px #999;
     line-height: 33px;
-}
-
-.logo-text-dallas {
-    color: orange;
-}
-
-.logo-text-camel {
-    color: #bf7c00;
 }
 
 .donate {
