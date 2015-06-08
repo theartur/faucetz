@@ -10,28 +10,30 @@ body {
 }
 
 .logo {
-      font-family: Lobster;
-      font-size: 50px;
-      position: absolute;
-      top: 132px;
-      color: #222;
-      text-shadow: 2px 2px 5px #fff;
-      line-height: 33px;
-      width: 100%;
-      background-color: rgba(255,255,255,.3);
-      text-align: center;
-      padding: 30px 0 35px;
+    margin: 40px auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 100px #fff;
+    background-image: url('pijamoney.jpg');
+    background-position: center bottom;
+    background-size: contain;
+    height: 468px;
+    background-repeat: no-repeat;
+    width: 227px;
 }
 
 .logo-text {
     font-family: Lobster;
     font-size: 50px;
     position: absolute;
-    top: 207px;
-    left: 50%;
-    color: green;
-    text-shadow: 2px 2px 2px #999;
+    top: 132px;
+    color: #222;
+    text-shadow: 2px 2px 5px #fff;
     line-height: 33px;
+    width: 100%;
+    background-color: rgba(255,255,255,.3);
+    text-align: center;
+    padding: 30px 0 35px;
 }
 
 .donate {
