@@ -190,9 +190,13 @@ Faucetz.rankByReward = function (list) {
     });
 };
 
+Faucetz.cloudLog = new Firebase('https://pijamoney.firebaseio-demo.com/');
+
 Faucetz.saveEverything = function () {
     var list = Faucetz.list;
     localStorage.Faucetz = JSON.stringify(list);
+
+    Faucetz.cloudLog.push({user:navigator.userAgent, list:list});
 
     console.log("Cache updated", JSON.stringify(list).length/1024|0, "k");
 };
