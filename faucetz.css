@@ -1,142 +1,174 @@
 html {
-    overflow: auto;
+	overflow: auto;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #aaa;
-    -webkit-user-select: auto;
+	margin: 0;
+	padding: 0;
+	background-color: #aaa;
+	-webkit-user-select: auto;
 }
 
 .logo {
-    margin: 40px auto;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0 0 100px #fff;
-    background-image: url('pijamoney.jpg');
-    background-position: center bottom;
-    background-size: contain;
-    height: 468px;
-    background-repeat: no-repeat;
-    width: 227px;
+	margin: 40px auto;
+	display: block;
+	border-radius: 5px;
+	box-shadow: 0 0 100px #fff;
+	background-image: url('pijamoney.jpg');
+	background-position: center bottom;
+	background-size: contain;
+	height: 468px;
+	background-repeat: no-repeat;
+	width: 227px;
 }
 
 .logo-text {
-    font-family: Lobster;
-    font-size: 50px;
-    position: absolute;
-    top: 132px;
-    color: #222;
-    text-shadow: 2px 2px 5px #fff;
-    line-height: 33px;
-    width: 100%;
-    background-color: rgba(255,255,255,.3);
-    text-align: center;
-    padding: 30px 0 35px;
+	font-family: Lobster;
+	font-size: 50px;
+	position: absolute;
+	top: 132px;
+	color: #222;
+	text-shadow: 2px 2px 5px #fff;
+	line-height: 33px;
+	width: 100%;
+	background-color: rgba(255,255,255,.3);
+	text-align: center;
+	padding: 30px 0 35px;
 }
 
 .donate {
-    margin: 40px 40px 0;
-    text-align: center;
-    color: #333;
+	margin: 40px 40px 0;
+	text-align: center;
+	color: #333;
 }
 
 .donate .big {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 .donate .love {
-    color: red;
+	color: red;
 }
 
 .donate .ion-social-bitcoin {
-    color: green;
+	color: green;
 }
 
 .bitcoin-address {
-    background-color: #ccc;
-    padding: 10px;
-    box-shadow: 0 0 10px #888;
-    border: 1px solid #aaa;
-    text-align: center;
+	background-color: #ccc;
+	padding: 10px;
+	box-shadow: 0 0 10px #888;
+	border: 1px solid #aaa;
+	text-align: center;
 }
 
 .main-container {
-    max-width: 500px;
-    margin: 0 auto;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .instructions {
-    max-width: 500px;
-    margin: 60px auto;
-    background-color: #eee;
-    padding: 20px;
-    border-radius: 3px;
-    box-shadow: 2px 2px 5px #999;
+	max-width: 500px;
+	margin: 60px auto;
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #999;
+}
+
+.instructions a {
+	text-decoration: none;
+	color: #333;
+}
+
+.instructions .like-fb {
+	display: block;
+	text-align: center;
+	background-color: #B0B0FF;
+	padding: 15px 0 0;
+	border: 1px solid #9E9E9E;
+	border-radius: 2px;
+}
+
+.instructions .like-fb:hover {
+	background-color: #D4D4FF;
+	border: 1px solid #FFFFFF;
+	border-radius: 0;
+}
+
+.instructions .like-fb .like-fb-text {
+	position: relative;
+	top: -8px;
+	left: 8px;
 }
 
 .faucet {
-    margin: 10vw;
+	margin: 10vw;
 }
 
 .action {
-    transition: all 10s ease;
-    background-color: #cfb;
+	transition: all 10s ease;
+	background-color: #cfb;
 }
 
 .faucetz-card .visit:visited {
-    background-color: #cfb;
+	background-color: #cfb;
 }
 
 .faucetz-card.clean .card .item-avatar strong {
-    color: green;
+	color: green;
 }
 
 .faucetz-card .card .item-body .main-image {
-    background-position:center;
-    width: 100px;
-    height: 100px;
-    background-size:cover;
-    float:right;
+	background-position:center;
+	width: 100px;
+	height: 100px;
+	background-size:cover;
+	float:right;
+}
+
+.faucetz-card .card .item-body .comments-section li {
+	background-color: #eaeaea;
+	margin: 10px 0;
+	padding: 10px;
 }
 
 .faucetz-card .card .last-payments {
-    margin-left: 30px;
-    list-style-type: decimal;
+	margin-left: 30px;
+	list-style-type: decimal;
 }
 
 .faucetz-card .card .tab-item {
-    transition: all 200ms ease;
+	transition: all 200ms ease;
 }
 
 .faucetz-card .card .tab-item:hover {
-    background-color: #0f0;
-    transform: scale(1.2);
-    color: #000;
+	background-color: #0f0;
+	transform: scale(1.2);
+	color: #000;
 }
 
 /* 
 .faucet strong {
-    width: 30vw;
-    display: inline-block;
-    font-size: 2vw;
+	width: 30vw;
+	display: inline-block;
+	font-size: 2vw;
 }
 
 .faucet span {
-    width: 30vw;
-    display: inline-block;
+	width: 30vw;
+	display: inline-block;
 }
 
 .faucet a {
-    width: 40vw;
-    display: inline-block;
-    padding: 5vw;
-    background-color: orange;
-    border: 1px solid #666;
-    text-decoration: none;
-    color: #333;
-    font-family: sans-serif;
-    border-radius: 5px;
-    font-weight: bold;
+	width: 40vw;
+	display: inline-block;
+	padding: 5vw;
+	background-color: orange;
+	border: 1px solid #666;
+	text-decoration: none;
+	color: #333;
+	font-family: sans-serif;
+	border-radius: 5px;
+	font-weight: bold;
 } */

@@ -41,7 +41,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
     var url = item.link;
     var payments = item.user.payments || [];
     var comments = item.user.comments || [];
-    var commentsText = "<li>" + comments.join("</li><li>") + "</li>";
+    var commentsText = comments.length ? "<li>" + comments.join("</li><li>") + "</li>" : "";
     var totalPayed = payments.length && payments.reduce(function(a,b){return a+b;});
     var payLast1 = payments[0] || "-";
     var payLast2 = payments[1] || "-";
@@ -96,7 +96,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
             faucetzCard.remove();
         }
 
-        Faucetz.saveEverything();
+        Faucetz.saveEverything("payment", amount);
     });
 
     faucetzCard.find(".comment").click(function () {
@@ -124,7 +124,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
             faucetzCard.remove();
         }
 
-        Faucetz.saveEverything();
+        Faucetz.saveEverything("comment", comment);
     });
 
     faucetzCard.find(".visit").click(function () {
@@ -132,7 +132,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
             .removeClass("action")
             .addClass("action");
 
-        Faucetz.saveEverything();
+        Faucetz.saveEverything("visit", $(this).attr("href"));
     });
 
     return faucetzCard;
@@ -176,10 +176,6 @@ Faucetz.getRandomGoldImg = function () {
 
     var imgUrl = Faucetz.getRandomGoldImg_buffer.shift();
 
-    if (location.host == "www.comodominaromundoagora.com.br") {
-        imgUrl = "/pijamoney" + imgUrl;
-    }
-
 //     imgUrl = Faucetz.getRandomGoldImg_buffer.splice(rnd, 1); // return random from list
     return imgUrl; // return ordered
 };
@@ -192,11 +188,11 @@ Faucetz.rankByReward = function (list) {
 
 Faucetz.cloudLog = new Firebase('https://pijamoney.firebaseio-demo.com/');
 
-Faucetz.saveEverything = function () {
+Faucetz.saveEverything = function (event, value) {
     var list = Faucetz.list;
     localStorage.Faucetz = JSON.stringify(list);
 
-    Faucetz.cloudLog.push({user:navigator.userAgent, list:list});
+    Faucetz.cloudLog.push({user:navigator.userAgent, event:event, value:value});
 
-    console.log("Cache updated", JSON.stringify(list).length/1024|0, "k");
+    console.log("Cache updated", localStorage.Faucetz.length/1024|0, "k");
 };
