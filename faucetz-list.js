@@ -4,30 +4,12 @@ Faucetz.extracted = {
     "results": [
         {
             "clean": "true",
-            "reward": "7736 satoshi",
-            "interval": "15 min",
-            "description": "Get free bitcoin up to 25k satoshi every 15 minutes - 25% ref",
-            "link": "http://cryptoshaft.com/?id=1181",
-            "name": "Cryptoshaft",
-            "highestdailypayout": "26875 satoshi"
-        },
-        {
-            "clean": "true",
             "reward": "6242 satoshi",
             "interval": "10 min",
             "description": "Vote for the cutest animal and earn at least 1,200 satoshi every hour, up to 1,800 satoshi every hour!",
             "link": "http://playbitco.in/?ref=1NnFcBCTTcmEYH4LCweFVogcxq6K21zWXf",
             "name": "PlayBitco.in",
             "highestdailypayout": "388710 satoshi"
-        },
-        {
-            "clean": "true",
-            "reward": "3640 satoshi",
-            "interval": "5 min",
-            "description": "Unique leveling system rewards loyalty with increased BTC payouts and level-up bonuses! 10% lifetime referral bonus!",
-            "link": "http://faucet.bitcentric.net/?ref=5949692231811072",
-            "name": "faucet.bitcentric.net",
-            "highestdailypayout": "64151 satoshi"
         },
         {
             "clean": "true",
@@ -3974,7 +3956,26 @@ Faucetz.extracted = {
             "link": "http://chucknorris.faucetfly.com",
             "name": "Chuck Norris",
             "highestdailypayout": "575 satoshi"
+        },
+        {
+            "clean": "true",
+            "reward": "3640 satoshi",
+            "interval": "5 min",
+            "description": "Unique leveling system rewards loyalty with increased BTC payouts and level-up bonuses! 10% lifetime referral bonus!",
+            "link": "http://faucet.bitcentric.net/?ref=5949692231811072",
+            "name": "faucet.bitcentric.net",
+            "highestdailypayout": "64151 satoshi"
+        },
+        {
+            "clean": "true",
+            "reward": "7736 satoshi",
+            "interval": "15 min",
+            "description": "Get free bitcoin up to 25k satoshi every 15 minutes - 25% ref",
+            "link": "http://cryptoshaft.com/?id=1181",
+            "name": "Cryptoshaft",
+            "highestdailypayout": "26875 satoshi"
         }
+        
 
 
 
