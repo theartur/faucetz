@@ -1,5 +1,5 @@
 window.onload = function () {
-	var internalEtag = 'FaucetzCleanXYZ'; // FaucetzClean(xxx) is internal ETAG
+	var internalEtag = 'FaucetzClean000'; // FaucetzClean(xxx) is internal ETAG
 	if ( ! localStorage[internalEtag]) {
 		localStorage.Faucetz = [];
 		localStorage[internalEtag] = true;
