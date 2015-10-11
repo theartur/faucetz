@@ -3,13 +3,17 @@ window.onload = function () {
 	if ( ! localStorage[internalEtag]) {
 		localStorage.Faucetz = [];
 		localStorage[internalEtag] = true;
-		console.log("Local lists were cleaned");
+		logz("Local lists were cleaned");
 	} else {
-		console.log("Served lists are clean");
+		logz("Served lists are clean");
 	}
 	
 	$.get("card.html?_=" + Math.random(), Faucetz.init);
 };
+
+function logz () {
+	// return console.log.apply(console, arguments);
+}
 
 Faucetz.init = function (cardTemplate) {
 	Faucetz.setupCoinSelection(cardTemplate);
@@ -37,8 +41,8 @@ Faucetz.loadMore = function () {
     var filtered = true;
     var currentFaucet;
     
-    console.log("Loading more listHead:", Faucetz.listHead);
-    console.log("Loading more list:", Faucetz.list.length);
+    logz("Loading more listHead:", Faucetz.listHead);
+    logz("Loading more list:", Faucetz.list.length);
     
     while (filtered && limit--) {
         currentFaucet = Faucetz.list[Faucetz.listHead++];
@@ -67,7 +71,7 @@ Faucetz.resetFaucetList = function () {
 	Faucetz.cardsRendered = 0;
 	Faucetz.list = Faucetz.getCurrencyList();
 	Faucetz.loadMore();
-	console.log("RESET FAUCET LIST, good?", Faucetz.container.html().length == 0);
+	logz("RESET FAUCET LIST, good?", Faucetz.container.html().length == 0);
 };
 
 Faucetz.buildFaucetzCard = function (item, newCard) {
@@ -174,7 +178,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 
 Faucetz.pushComment = function (item, comment, faucetzCard) {
 	if (comment) {
-		console.log("Faucetz.pushComment", item, comment, faucetzCard);
+		logz("Faucetz.pushComment", item, comment, faucetzCard);
 
 		if (typeof comment == "string") {
 			item.user.comments.push(comment);
@@ -254,7 +258,7 @@ Faucetz.getCurrencyList = function () {
 			break;
 	}
 	
-	console.log("Faucetz[coin]", coin, Faucetz[coin]);
+	logz("Faucetz[coin]", coin, Faucetz[coin]);
 
 	return Faucetz[coin].results;
 };
@@ -267,11 +271,11 @@ Faucetz.filterCleanFaucetz = function (list) {
 	var filtered = true;
 	var filteredFaucetz = [];
 	
-	console.log("Filtering...");
+	logz("Filtering...");
 	var listHead = 0;
 	
 	function oldWay() {
-		console.log("oldWay()");
+		logz("oldWay()");
 		while (limit--) {
 	// 		if (list[listHead].clean) {
 				filteredFaucetz.push(list[listHead]);
@@ -282,7 +286,7 @@ Faucetz.filterCleanFaucetz = function (list) {
 	}
 	
 	function newWay() {
-		console.log("newWay()");
+		logz("newWay()");
 
 	}
 
@@ -324,7 +328,7 @@ Faucetz.faucetzIndex = Faucetz.cloudLog.child("faucetz-index");
 // 	// var newInfo = list;
 //     // var served = Faucetz.getCurrencyList();
 //     // Faucetz.list = $.extend(true, newInfo, served);
-//     console.log("Cloud info updated", list.val());
+//     logz("Cloud info updated", list.val());
 // });
 
 Faucetz.faucetzIndex.on("child_changed", function(snapshot) {
@@ -337,7 +341,7 @@ Faucetz.faucetzIndex.on("child_changed", function(snapshot) {
 
 	Faucetz.updateFaucetIndex(changed, key);
 
-	console.log(">>> URL: ", changed, key);
+	logz(">>> URL: ", changed, key);
 });
 
 Faucetz.getFaucetItemByIndex = function (id) {
@@ -352,12 +356,12 @@ Faucetz.getFaucetItemByIndex = function (id) {
 };
 
 Faucetz.updateFaucetIndex = function (changed, key) {
-	console.log("Faucetz.updateFaucetIndex()", event, key, changed);
+	logz("Faucetz.updateFaucetIndex()", event, key, changed);
 
 	var elem = $("[data-index-url=" + key + "]");
 	var item = Faucetz.getFaucetItemByIndex(key);
 
-	console.log(">>> item, changed, elem: ", item, changed, elem);
+	logz(">>> item, changed, elem: ", item, changed, elem);
 
 	if (changed.payments) {
 		Faucetz.pushPayment(item, changed, elem);
@@ -375,7 +379,7 @@ Faucetz.updateFaucetIndex = function (changed, key) {
 };
 
 Faucetz.getIndexUrl = function (url) {
-	console.log("Faucetz.getIndexUrl()", url);
+	logz("Faucetz.getIndexUrl()", url);
 	return url.replace(/[^a-zA-Z0-9]+/g, "X");
 };
 
@@ -384,7 +388,7 @@ Faucetz.saveEverything = function (event, url, value) {
 
 	url = Faucetz.getIndexUrl(url);
 
-console.log("list>>>>", event, url, value);
+logz("list>>>>", event, url, value);
 
 	var cloudItem = Faucetz.faucetzIndex.child(url);
 
@@ -422,5 +426,5 @@ console.log("list>>>>", event, url, value);
 
 	Faucetz.cloudLog.child('signatures').push({date:""+new Date, user:navigator.userAgent, index:url, event:event, value:value});
 
-	console.log("Saved", Math.floor(JSON.stringify(list).length/1024), "kb");
+	logz("Saved", Math.floor(JSON.stringify(list).length/1024), "kb");
 };
