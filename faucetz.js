@@ -8,11 +8,68 @@ window.onload = function () {
 		console.log("Served lists are clean");
 	}
 	
-	$.get("card.html?_=" + Math.random(), Faucetz.onCardTemplateLoad);
+	$.get("card.html?_=" + Math.random(), Faucetz.init);
 };
 
-	
-Faucetz.cardsRendered = 0;
+Faucetz.init = function (cardTemplate) {
+	Faucetz.setupCoinSelection(cardTemplate);
+	Faucetz.onCardTemplateLoad(cardTemplate);
+	Faucetz.resetFaucetList();
+	Faucetz.initInfinityScroll();
+}
+
+Faucetz.setupCoinSelection = function (cardTemplate) {
+	$(".coin-selection a").click(function () {
+		$(".coin-selection .active").removeClass("active");
+		$(this).addClass("active");
+		Faucetz.resetFaucetList();
+
+		setTimeout(function(){
+			$('html, body').animate({
+		        scrollTop: $(".coin-selection").offset().top
+		    }, 400);
+		}, 250);
+	});
+}
+
+Faucetz.loadMore = function () {
+    var limit = 20;
+    var filtered = true;
+    var currentFaucet;
+    
+    console.log("Loading more listHead:", Faucetz.listHead);
+    console.log("Loading more list:", Faucetz.list.length);
+    
+    while (filtered && limit--) {
+        currentFaucet = Faucetz.list[Faucetz.listHead++];
+        if (currentFaucet && currentFaucet.clean) {
+            Faucetz.container.append(Faucetz.buildFaucetzCard(currentFaucet, true));
+        }
+        
+    }
+};
+
+Faucetz.initInfinityScroll = function () {
+    Faucetz.loadMore();
+    
+    $(document).scroll(function() {
+        var height = $(document).height() - ($(window).height() * 3);
+        var scroll = window.scrollY + $(window).height();
+        if (height <= scroll) {
+            Faucetz.loadMore();
+        }
+    });
+}
+
+Faucetz.resetFaucetList = function () {
+	Faucetz.container.html("");
+	Faucetz.listHead = 0;
+	Faucetz.cardsRendered = 0;
+	Faucetz.list = Faucetz.getCurrencyList();
+	Faucetz.loadMore();
+	console.log("RESET FAUCET LIST, good?", Faucetz.container.html().length == 0);
+};
+
 Faucetz.buildFaucetzCard = function (item, newCard) {
 	// {
 	//     "paysystem": "direct",
@@ -40,10 +97,12 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 	var name = item.name;
 	var interval = item.interval;
 	var url = item.link;
+	var indexUrl = item.indexUrl || Faucetz.getIndexUrl(url);
 	var payments = item.user.payments || [];
 	var comments = item.user.comments || [];
+	var visits = item.user.visits || 0;
 	var commentsText = comments.length ? "<li>" + comments.join("</li><li>") + "</li>" : "";
-	var totalPayed = payments.length && payments.reduce(function(a,b){return a+b;});
+	var totalPayed = item.totalPayed || (payments.length && payments.reduce(function(a,b){return a+b;}));
 	var payLast1 = payments[0] || "-";
 	var payLast2 = payments[1] || "-";
 	var payLast3 = payments[2] || "-";
@@ -53,11 +112,13 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 	var mainImage = item.mainImage || Faucetz.getRandomGoldImg();
 
 	item.index = index;
+	item.indexUrl = indexUrl;
 	item.avatar = avatar;
 	item.mainImage = mainImage;
 	
 	var itemTemplate = Faucetz.cardTemplate
 		.replace("{{ index }}", index)
+		.replace("{{ indexUrl }}", indexUrl)
 		.replace("{{ clean }}", clean)
 		.replace("{{ currentStatus }}", currentStatus)
 		.replace("{{ name }}", name)
@@ -69,6 +130,7 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 		.replace("{{ payLast5 }}", payLast5)
 		.replace("{{ payments }}", payments.length)
 		.replace("{{ comments }}", commentsText)
+		.replace("{{ visits }}", visits)
 		.replace("{{ commentsLength }}", comments.length)
 		.replace("{{ interval }}", interval)
 		.replace("{{ url }}", url)
@@ -82,61 +144,119 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 
 		var amount = prompt("how many satoshis?")|0;
 
-		if (amount) {
-			item.user.payments.unshift(amount);
+		Faucetz.pushPayment(item, amount, faucetzCard);
 
-			var updatedValues = Faucetz.buildFaucetzCard(item);
-
-			updatedValues
-				.find(".payed")
-				.removeClass("action")
-				.addClass("action");
-
-			updatedValues.insertAfter(faucetzCard);
-
-			faucetzCard.remove();
-		}
-
-		Faucetz.saveEverything("payment", amount);
+		Faucetz.saveEverything("payment", url, amount);
 	});
 
 	faucetzCard.find(".comment").click(function () {
 
 		var comment = prompt("do you want to say something?");
 
-		if (comment) {
-			item.user.comments.push(comment);
+		Faucetz.pushComment(item, comment, faucetzCard);
 
-			var updatedValues = Faucetz.buildFaucetzCard(item);
-
-			var commentsAvailable = item.user.comments.length;
-
-			while (commentsAvailable--) {
-				comment = "<li>" + item.user.comments[commentsAvailable] + "</li>";
-				//                     updatedValues.find(".comments-section").append(comment);
-			}
-
-			updatedValues
-				.find(".comment")
-				.css("background-color", "#cfb");
-
-			updatedValues.insertAfter(faucetzCard);
-
-			faucetzCard.remove();
-		}
-
-		Faucetz.saveEverything("comment", comment);
+		Faucetz.saveEverything("comment", url, comment);
 	});
 
 	faucetzCard.find(".visit").click(function () {
-		$(this)
+
+		button
 			.removeClass("action")
 			.addClass("action");
 
-		Faucetz.saveEverything("visit", $(this).attr("href"));
+		Faucetz.pushVisit(item, $(this), faucetzCard);
+
+		Faucetz.saveEverything("visit", url, $(this).attr("href"));
 	});
 
 	return faucetzCard;
+};
+
+Faucetz.pushComment = function (item, comment, faucetzCard) {
+	if (comment) {
+		console.log("Faucetz.pushComment", item, comment, faucetzCard);
+
+		if (typeof comment == "string") {
+			item.user.comments.push(comment);
+		} else {
+			item.user.comments = comment;
+		}
+
+		var updatedValues = Faucetz.buildFaucetzCard(item);
+
+		// var commentsAvailable = item.user.comments.length;
+
+		// while (commentsAvailable--) {
+		// 	comment = "<li>" + item.user.comments[commentsAvailable] + "</li>";
+		// 	//                     updatedValues.find(".comments-section").append(comment);
+		// }
+
+		updatedValues
+			.find(".comment")
+			.css("background-color", "#cfb");
+
+		updatedValues.insertAfter(faucetzCard);
+
+		faucetzCard.remove();
+	}
+};
+
+Faucetz.pushPayment = function (item, amount, faucetzCard) {
+
+	if (amount) {
+		if (typeof amount == "number") {
+			item.user.payments.unshift(amount);
+		} else {
+			var total = amount["payments-total"] || amount.payments.reduce(function(a,b){return a+b;})
+			item.user = item.user || {};
+			item.user.payments = amount.payments;
+			item.totalPayed = total;
+		}
+
+		var updatedValues = Faucetz.buildFaucetzCard(item);
+
+		updatedValues
+			.find(".payed")
+			.removeClass("action")
+			.addClass("action");
+
+		updatedValues.insertAfter(faucetzCard);
+
+		faucetzCard.remove();
+	}
+};
+
+Faucetz.pushVisit = function (item, visits, faucetzCard) {
+	item.user.visits = (visits || 0) + 1;
+
+	var updatedValues = Faucetz.buildFaucetzCard(item);
+
+	updatedValues.insertAfter(faucetzCard);
+
+	faucetzCard.remove();
+};
+
+Faucetz.getCurrencyList = function () {
+	var coin = $(".coin-selection a.active img").prop("alt").toLowerCase();
+
+	switch (coin) {
+		case "bitcoin":
+			coin = "btc";
+			break;
+		case "dogecoin":
+			coin = "doge";
+			break;
+		case "litecoin":
+			coin = "lite";
+			break;
+		case "dash":
+			coin = "dash";
+			break;
+	}
+	
+	console.log("Faucetz[coin]", coin, Faucetz[coin]);
+
+	return Faucetz[coin].results;
 };
 
 Faucetz.filterCleanFaucetz = function (list) {
@@ -150,13 +270,23 @@ Faucetz.filterCleanFaucetz = function (list) {
 	console.log("Filtering...");
 	var listHead = 0;
 	
-	while (limit--) {
-// 		if (list[listHead].clean) {
-			filteredFaucetz.push(list[listHead]);
-// 		}
-		
-		listHead++;
+	function oldWay() {
+		console.log("oldWay()");
+		while (limit--) {
+	// 		if (list[listHead].clean) {
+				filteredFaucetz.push(list[listHead]);
+	// 		}
+			
+			listHead++;
+		}
 	}
+	
+	function newWay() {
+		console.log("newWay()");
+
+	}
+
+	oldWay();
 
 	return filteredFaucetz;
 };
@@ -188,12 +318,109 @@ Faucetz.rankByReward = function (list) {
 };
 
 Faucetz.cloudLog = new Firebase('https://pijamoney.firebaseio-demo.com/');
+Faucetz.faucetzIndex = Faucetz.cloudLog.child("faucetz-index");
 
-Faucetz.saveEverything = function (event, value) {
+// Faucetz.cloudLog.child('list').on('value', function (list) {
+// 	// var newInfo = list;
+//     // var served = Faucetz.getCurrencyList();
+//     // Faucetz.list = $.extend(true, newInfo, served);
+//     console.log("Cloud info updated", list.val());
+// });
+
+Faucetz.faucetzIndex.on("child_changed", function(snapshot) {
+	var changed = snapshot.val();
+	var key = snapshot.key();
+
+	// Faucetz.updateFaucetIndex(":::event.., key.., changed.., changed[event]..", event.length, key.length, changed.length, changed[event].length);
+	// Faucetz.updateFaucetIndex("changed:::", changed);
+	// Faucetz.updateFaucetIndex(":::event, key, changed, changed[event]", event, key, changed, changed[event]);
+
+	Faucetz.updateFaucetIndex(changed, key);
+
+	console.log(">>> URL: ", changed, key);
+});
+
+Faucetz.getFaucetItemByIndex = function (id) {
 	var list = Faucetz.list;
-	localStorage.Faucetz = JSON.stringify(list);
+	var listToSearch = Faucetz.list.length;
 
-	Faucetz.cloudLog.push({user:navigator.userAgent, event:event, value:value});
+	while (listToSearch--) {
+		if (list[listToSearch].indexUrl == id) {
+			return list[listToSearch];
+		}
+	}
+};
 
-	console.log("Cache updated", localStorage.Faucetz.length/1024|0, "k");
+Faucetz.updateFaucetIndex = function (changed, key) {
+	console.log("Faucetz.updateFaucetIndex()", event, key, changed);
+
+	var elem = $("[data-index-url=" + key + "]");
+	var item = Faucetz.getFaucetItemByIndex(key);
+
+	console.log(">>> item, changed, elem: ", item, changed, elem);
+
+	if (changed.payments) {
+		Faucetz.pushPayment(item, changed, elem);
+
+	}
+
+	if (changed.comments) {
+		Faucetz.pushComment(item, changed.comments, elem);
+
+	}
+
+	if (changed.visits) {
+		Faucetz.pushVisit(item, changed.visits, elem);
+	}
+};
+
+Faucetz.getIndexUrl = function (url) {
+	console.log("Faucetz.getIndexUrl()", url);
+	return url.replace(/[^a-zA-Z0-9]+/g, "X");
+};
+
+Faucetz.saveEverything = function (event, url, value) {
+	var list = Faucetz.list;
+
+	url = Faucetz.getIndexUrl(url);
+
+console.log("list>>>>", event, url, value);
+
+	var cloudItem = Faucetz.faucetzIndex.child(url);
+
+	if (event == "payment") {
+		cloudItem.child("payments").transaction(function(payments) {
+			if ( !payments || payments === 1) {
+				payments = [];
+			}
+
+			payments.unshift(value);
+
+			return payments.splice(0, 5);
+		});
+		
+		cloudItem.child("payments-total").transaction(function(payments) {
+			return (payments||0)+value;
+		});
+
+	} else if (event == "comment") {
+		cloudItem.child("comments").transaction(function(comments) {
+			if ( !comments || comments === 1) {
+				comments = [];
+			}
+
+			comments.unshift(value);
+
+			return comments.splice(0, 5);
+		});
+	
+	} else if (event == "visit") {
+		cloudItem.child("visits").transaction(function(visits) {
+			return (visits||0)+value;
+		});
+	}
+
+	Faucetz.cloudLog.child('signatures').push({date:""+new Date, user:navigator.userAgent, index:url, event:event, value:value});
+
+	console.log("Saved", Math.floor(JSON.stringify(list).length/1024), "kb");
 };
