@@ -238,7 +238,7 @@ Faucetz.pushPayment = function (item, amount, faucetzCard, highlight) {
 };
 
 Faucetz.pushVisit = function (item, visits, faucetzCard, highlight) {
-	item.user.visits = parseInt(visits || 0, 10) + 1;
+	item.user.visits = parseInt(visits || 0, 10);
 
 	var updatedValues = Faucetz.buildFaucetzCard(item);
 		
