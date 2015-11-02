@@ -444,7 +444,7 @@ logz("list>>>>", event, indexUrl, value);
 	
 	} else if (event == "visit") {
 		cloudItem.child("visits").transaction(function(visits) {
-			return parseInt(visits||0, 10)+value;
+			return parseInt(visits||0, 10)+1;
 		});
 	}
 
