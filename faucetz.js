@@ -1,5 +1,5 @@
 window.onload = function () {
-	var internalEtag = 'FaucetzClean000'; // FaucetzClean(xxx) is internal ETAG
+	var internalEtag = 'FaucetzClean001'; // FaucetzClean(xxx) is internal ETAG
 	if ( ! localStorage[internalEtag]) {
 		localStorage.Faucetz = [];
 		localStorage[internalEtag] = true;
@@ -12,7 +12,11 @@ window.onload = function () {
 };
 
 function logz () {
-	// return console.log.apply(console, arguments);
+	if (location.host != "pijamoney.com") {
+		return console.log.apply(console, arguments);
+	} else {
+		return function(){};
+	}
 }
 
 Faucetz.init = function (cardTemplate) {
@@ -84,6 +88,8 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 	//     "dirty": "true"
 	// }
 
+	logz("buildFaucetzCard()", item);
+
 	item.user = item.user || {};
 	item.user.payments = item.user.payments || [];
 	item.user.comments = item.user.comments || [];
@@ -148,40 +154,34 @@ Faucetz.buildFaucetzCard = function (item, newCard) {
 
 		var amount = prompt("how many satoshis?")|0;
 
-		Faucetz.pushPayment(item, amount, faucetzCard);
-
-		Faucetz.saveEverything("payment", url, amount);
+		Faucetz.pushPayment(item, amount, faucetzCard, true);
 	});
 
 	faucetzCard.find(".comment").click(function () {
 
 		var comment = prompt("do you want to say something?");
 
-		Faucetz.pushComment(item, comment, faucetzCard);
-
-		Faucetz.saveEverything("comment", url, comment);
+		Faucetz.pushComment(item, comment, faucetzCard, true);
 	});
 
 	faucetzCard.find(".visit").click(function () {
-
-		button
-			.removeClass("action")
-			.addClass("action");
-
 		Faucetz.pushVisit(item, $(this), faucetzCard);
 
-		Faucetz.saveEverything("visit", url, $(this).attr("href"));
+		Faucetz.saveEverything("visit", url, $(this).attr("href"), true);
 	});
 
 	return faucetzCard;
 };
 
-Faucetz.pushComment = function (item, comment, faucetzCard) {
+Faucetz.pushComment = function (item, comment, faucetzCard, highlight) {
 	if (comment) {
 		logz("Faucetz.pushComment", item, comment, faucetzCard);
 
 		if (typeof comment == "string") {
 			item.user.comments.push(comment);
+
+			Faucetz.saveEverything("comment", item.indexUrl, comment);
+
 		} else {
 			item.user.comments = comment;
 		}
@@ -195,9 +195,11 @@ Faucetz.pushComment = function (item, comment, faucetzCard) {
 		// 	//                     updatedValues.find(".comments-section").append(comment);
 		// }
 
-		updatedValues
-			.find(".comment")
-			.css("background-color", "#cfb");
+		if (highlight) {
+			updatedValues
+				.find(".comment")
+				.css("background-color", "#cfb");
+		}
 
 		updatedValues.insertAfter(faucetzCard);
 
@@ -205,12 +207,15 @@ Faucetz.pushComment = function (item, comment, faucetzCard) {
 	}
 };
 
-Faucetz.pushPayment = function (item, amount, faucetzCard) {
+Faucetz.pushPayment = function (item, amount, faucetzCard, highlight) {
 
 	if (amount) {
-		if (typeof amount == "number") {
+		if (typeof amount == "number") { // push
 			item.user.payments.unshift(amount);
-		} else {
+
+			Faucetz.saveEverything("payment", item.indexUrl, amount);
+
+		} else { // update
 			var total = amount["payments-total"] || amount.payments.reduce(function(a,b){return a+b;})
 			item.user = item.user || {};
 			item.user.payments = amount.payments;
@@ -218,11 +223,13 @@ Faucetz.pushPayment = function (item, amount, faucetzCard) {
 		}
 
 		var updatedValues = Faucetz.buildFaucetzCard(item);
-
-		updatedValues
-			.find(".payed")
-			.removeClass("action")
-			.addClass("action");
+		
+		if (highlight) {
+			updatedValues
+				.find(".payed")
+				.removeClass("action")
+				.addClass("action");
+		}
 
 		updatedValues.insertAfter(faucetzCard);
 
@@ -230,10 +237,17 @@ Faucetz.pushPayment = function (item, amount, faucetzCard) {
 	}
 };
 
-Faucetz.pushVisit = function (item, visits, faucetzCard) {
-	item.user.visits = (visits || 0) + 1;
+Faucetz.pushVisit = function (item, visits, faucetzCard, highlight) {
+	item.user.visits = parseInt(visits || 0, 10) + 1;
 
 	var updatedValues = Faucetz.buildFaucetzCard(item);
+		
+	if (highlight) {
+		updatedValues
+			.find(".visit")
+			.removeClass("action")
+			.addClass("action");
+	}
 
 	updatedValues.insertAfter(faucetzCard);
 
@@ -321,7 +335,16 @@ Faucetz.rankByReward = function (list) {
 	});
 };
 
-Faucetz.cloudLog = new Firebase('https://pijamoney.firebaseio-demo.com/');
+Faucetz.getIndexUrl = function (url) {
+	logz("Faucetz.getIndexUrl()", url);
+	return url.replace(/[^a-zA-Z0-9]+/g, "X");
+};
+
+var hostIndex = Faucetz.getIndexUrl(location.host);
+
+logz("hostIndex", hostIndex);
+
+Faucetz.cloudLog = new Firebase('https://faucetz-' + hostIndex + '.firebaseio-demo.com/');
 Faucetz.faucetzIndex = Faucetz.cloudLog.child("faucetz-index");
 
 // Faucetz.cloudLog.child('list').on('value', function (list) {
@@ -330,6 +353,15 @@ Faucetz.faucetzIndex = Faucetz.cloudLog.child("faucetz-index");
 //     // Faucetz.list = $.extend(true, newInfo, served);
 //     logz("Cloud info updated", list.val());
 // });
+
+Faucetz.faucetzIndex.on('child_added', function(snapshot, prevChildKey) {
+	var changed = snapshot.val();
+	var key = snapshot.key();
+
+	logz("-----------CHILD ADDED", changed, key);
+
+	Faucetz.updateFaucetIndex(changed, key);
+});
 
 Faucetz.faucetzIndex.on("child_changed", function(snapshot) {
 	var changed = snapshot.val();
@@ -356,41 +388,33 @@ Faucetz.getFaucetItemByIndex = function (id) {
 };
 
 Faucetz.updateFaucetIndex = function (changed, key) {
-	logz("Faucetz.updateFaucetIndex()", event, key, changed);
 
-	var elem = $("[data-index-url=" + key + "]");
 	var item = Faucetz.getFaucetItemByIndex(key);
-
-	logz(">>> item, changed, elem: ", item, changed, elem);
+	var indexUrlSelector = "[data-index-url=" + key + "]";
 
 	if (changed.payments) {
-		Faucetz.pushPayment(item, changed, elem);
+		Faucetz.pushPayment(item, changed, $(indexUrlSelector));
 
 	}
 
 	if (changed.comments) {
-		Faucetz.pushComment(item, changed.comments, elem);
+		Faucetz.pushComment(item, changed.comments, $(indexUrlSelector));
 
 	}
 
 	if (changed.visits) {
-		Faucetz.pushVisit(item, changed.visits, elem);
+		Faucetz.pushVisit(item, changed.visits, $(indexUrlSelector));
 	}
-};
-
-Faucetz.getIndexUrl = function (url) {
-	logz("Faucetz.getIndexUrl()", url);
-	return url.replace(/[^a-zA-Z0-9]+/g, "X");
 };
 
 Faucetz.saveEverything = function (event, url, value) {
 	var list = Faucetz.list;
 
-	url = Faucetz.getIndexUrl(url);
+	var indexUrl = Faucetz.getIndexUrl(url);
 
-logz("list>>>>", event, url, value);
+logz("list>>>>", event, indexUrl, value);
 
-	var cloudItem = Faucetz.faucetzIndex.child(url);
+	var cloudItem = Faucetz.faucetzIndex.child(indexUrl);
 
 	if (event == "payment") {
 		cloudItem.child("payments").transaction(function(payments) {
@@ -404,7 +428,7 @@ logz("list>>>>", event, url, value);
 		});
 		
 		cloudItem.child("payments-total").transaction(function(payments) {
-			return (payments||0)+value;
+			return parseInt(payments||0, 10)+value;
 		});
 
 	} else if (event == "comment") {
@@ -420,11 +444,11 @@ logz("list>>>>", event, url, value);
 	
 	} else if (event == "visit") {
 		cloudItem.child("visits").transaction(function(visits) {
-			return (visits||0)+value;
+			return parseInt(visits||0, 10)+value;
 		});
 	}
 
-	Faucetz.cloudLog.child('signatures').push({date:""+new Date, user:navigator.userAgent, index:url, event:event, value:value});
+	Faucetz.cloudLog.child('signatures').push({date:""+new Date, user:navigator.userAgent, index:indexUrl, event:event, value:value});
 
 	logz("Saved", Math.floor(JSON.stringify(list).length/1024), "kb");
 };
