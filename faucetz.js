@@ -344,7 +344,18 @@ var hostIndex = Faucetz.getIndexUrl(location.host);
 
 logz("hostIndex", hostIndex);
 
-Faucetz.cloudLog = new Firebase('https://faucetz-' + hostIndex + '.firebaseio-demo.com/');
+var config = {
+	apiKey: "AIzaSyDHPD8wF4ujkpo9Cf-mgM7A9rvBZ5gWfQE",
+	authDomain: "pijamoney.firebaseapp.com",
+	databaseURL: "https://pijamoney.firebaseio.com",
+	storageBucket: "",
+	messagingSenderId: "923716501385"
+};
+
+firebase.initializeApp(config);
+firebase.auth().signInAnonymously();
+
+Faucetz.cloudLog = firebase.database().ref(hostIndex);
 Faucetz.faucetzIndex = Faucetz.cloudLog.child("faucetz-index");
 
 // Faucetz.cloudLog.child('list').on('value', function (list) {
